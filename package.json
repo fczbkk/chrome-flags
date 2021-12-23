@@ -1,0 +1,12 @@
+{
+  "name": "@fczbkk/chrome-flags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "Riki Fridrich <riki@fczbkk.com> (https://fczbkk.com/)",
+  "license": "MIT"
+}
