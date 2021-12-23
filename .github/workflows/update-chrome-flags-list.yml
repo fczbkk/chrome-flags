@@ -1,7 +1,10 @@
 name: Update list of Chrome flags
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  schedule:
+    # every day at midnight
+    - cron: '0 0 * * 0-6'
 
 jobs:
   update_chrome_flags_list:
