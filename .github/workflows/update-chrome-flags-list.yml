@@ -1,0 +1,27 @@
+name: Update list of Chrome flags
+on:
+  workflow_dispatch
+
+jobs:
+  update_chrome_flags_list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: update flags list
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+        run: npm run build
+
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          git add README.md
+          git commit -m "periodic update"
+          git push origin master
