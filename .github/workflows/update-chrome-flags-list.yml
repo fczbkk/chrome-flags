@@ -27,4 +27,4 @@ jobs:
         run: |
           git add README.md
           git commit -m "periodic update"
-          git push origin master
+          git push origin main
