@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 12/23/2021, 11:06:14 AM
+Last updated: 12/24/2021, 1:12:07 AM
 
 ### allow-cross-origin-auth-prompt
 
