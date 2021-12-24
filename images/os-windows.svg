@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-64,0)">
+        <g id="android">
+        </g>
+        <g id="mac">
+        </g>
+        <g id="linux">
+        </g>
+        <g id="chrome">
+        </g>
+        <g transform="matrix(0.0818279,0,0,0.0818279,148.344,-6.52125)">
+            <rect x="-1025.1" y="85.339" width="87.327" height="87.327" style="fill:rgb(0,120,212);"/>
+            <rect x="-928.188" y="85.339" width="87.327" height="87.327" style="fill:rgb(0,120,212);"/>
+            <rect x="-1025.1" y="182.255" width="87.327" height="87.327" style="fill:rgb(0,120,212);"/>
+            <rect x="-928.188" y="182.255" width="87.327" height="87.327" style="fill:rgb(0,120,212);"/>
+        </g>
+    </g>
+</svg>

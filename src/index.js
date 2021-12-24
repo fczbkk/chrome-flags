@@ -14,6 +14,14 @@ function getBlankBlock () {
   }
 }
 
+const KNOWN_OS = {
+  'WIN': {icon: 'os-windows.svg', name: 'Windows'},
+  'LINUX': {icon: 'os-linux.svg', name: 'Linux'},
+  'MAC': {icon: 'os-mac.svg', name: 'Mac'},
+  'ANDROID': {icon: 'os-android.svg', name: 'Android'},
+  'CHROMEOS': {icon: 'os-chrome.svg', name: 'Chrome OS'}
+}
+
 async function getSourceContent (url = sourceUrl) {
   return new Promise((resolve, reject) => {
     https.get(url, (response) => {
@@ -133,26 +141,31 @@ function parseSource (content = '') {
   return flags
 }
 
+function getOsIcons (conditions = '') {
+  const osMatchRe = /(?:^|[^\!])defined\(OS_(\w+)\)/g
+  let result = ''
+  let match = null
+  while (match = osMatchRe.exec(conditions)) {
+    const osId = match[1]
+    if (KNOWN_OS[osId]) {
+      const {icon, name} = KNOWN_OS[osId]
+      result += `<img src="./images/${icon}" width="16" height="16" alt="name">`
+    }
+  }
+  return result
+}
+
 function flagsToMarkdown (flags = []) {
   const result = []
 
   flags.forEach(flag => {
-    result.push(`### ${flag.flag}`)
-
-    if (flag.condition) {
-      result.push(`CONDITION: \`${flag.condition}\``)
-    }
-    if (flag.comment) {
-      result.push(flag.comment)
-    }
-
-    if (flag.note) {
-      result.push(`NOTE: ${flag.note}`)
-    }
-
+    const condition = flag.condition ? `<p>CONDITION: <code>${flag.condition}</code></p>` : ''
+    const comment = flag.comment ? `<p>${flag.comment}</p>` : ''
+    const note = flag.note ? `<p class="note">${flag.note}</p>` : ''
+    result.push(`<details><summary><code>${flag.flag}</code> ${getOsIcons(flag.condition)}</summary><div>${comment}${condition}${note}</div></details>`)
   })
 
-  return result.join('\n\n')
+  return result.join('\n')
 }
 
 const flagsSectionTitle = '## Flags';
