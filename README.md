@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 1/13/2022, 1:18:36 AM
+Last updated: 1/14/2022, 1:17:05 AM
 
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
 <details><summary><code>allow-http-screen-capture</code> </summary><div><p>Allow non-secure origins to use the screen capture API and the desktopCapture extension API.</p></div></details>
@@ -34,8 +34,6 @@ Last updated: 1/13/2022, 1:18:36 AM
 <details><summary><code>cloud-print-file-type</code> </summary><div><p>Specifies the mime type to be used when uploading data from the file referenced by cloud-print-file. Defaults to "application/pdf" if unspecified.</p></div></details>
 <details><summary><code>cloud-print-job-title</code> </summary><div><p>Used with kCloudPrintFile to specify a title for the resulting print job.</p></div></details>
 <details><summary><code>cloud-print-print-ticket</code> </summary><div><p>Used with kCloudPrintFile to specify a JSON print ticket for the resulting print job. Defaults to null if unspecified.</p></div></details>
-<details><summary><code>service</code> </summary><div><p>The process type value which causes a process to run as a cloud print service process. DO NOT CHANGE THIS VALUE. Cloud printing relies on an external binary launching Chrome with this process type.</p></div></details>
-<details><summary><code>cloud-print-setup-proxy</code> </summary><div><p>Setup cloud print proxy for provided printers. This does not start service or register proxy for autostart.</p></div></details>
 <details><summary><code>crash-on-hang-threads</code> </summary><div><p>Comma-separated list of BrowserThreads that cause browser process to crash if the given browser thread is not responsive. UI/IO are the BrowserThreads that are supported. For example: --crash-on-hang-threads=UI:18,IO:18 --> Crash the browser if UI or IO is not responsive for 18 seconds while the other browser thread is responsive.</p></div></details>
 <details><summary><code>create-browser-on-startup-for-tests</code> </summary><div><p>Some platforms like ChromeOS default to empty desktop. Browser tests may need to add this switch so that at least one browser instance is created on startup. TODO(nkostylev): Investigate if this switch could be removed. (http://crbug.com/148675)</p></div></details>
 <details><summary><code>custom-devtools-frontend</code> </summary><div><p>Specifies the http:// endpoint which will be used to serve devtools://devtools/custom/<path> Or a file:// URL to specify a custom file path to load from for devtools://devtools/bundled/<path></p></div></details>
