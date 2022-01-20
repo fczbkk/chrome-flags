@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 1/19/2022, 1:08:09 AM
+Last updated: 1/20/2022, 1:24:10 AM
 
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
 <details><summary><code>allow-http-screen-capture</code> </summary><div><p>Allow non-secure origins to use the screen capture API and the desktopCapture extension API.</p></div></details>
