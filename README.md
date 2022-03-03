@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/2/2022, 12:22:48 AM
+Last updated: 3/3/2022, 12:20:24 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -79,6 +79,7 @@ Last updated: 3/2/2022, 12:22:48 AM
 <details><summary><code>extensions-not-webstore</code> </summary><div><p>Specifies a comma-separated list of extension ids that should be forced to be treated as not from the webstore when doing install verification.</p></div></details>
 <details><summary><code>force-app-mode</code> </summary><div><p>Forces application mode. This hides certain system UI elements and forces the app to be installed if it hasn't been already.</p></div></details>
 <details><summary><code>force-first-run</code> </summary><div><p>Displays the First Run experience when the browser is started, regardless of whether or not it's actually the First Run (this overrides kNoFirstRun).</p></div></details>
+<details><summary><code>force-whats-new</code> </summary><div><p>Displays the What's New experience when the browser is started if it has not yet been shown for the current milestone (this overrides kNoFirstRun, without showing the First Run experience).</p></div></details>
 <details><summary><code>hide-crash-restore-bubble</code> </summary><div><p>Does not show the crash restore bubble when the browser is started during the system startup phase in ChromeOS, if the ChromeOS full restore feature is enabled, because the ChromeOS full restore notification is shown for the user to select restore or not.</p></div></details>
 <details><summary><code>homepage</code> </summary><div><p>Specifies which page will be displayed in newly-opened tabs. We need this for testing purposes so that the UI tests don't depend on what comes up for http://google.com.</p></div></details>
 <details><summary><code>incognito</code> </summary><div><p>Causes the browser to launch directly in incognito mode.</p></div></details>
@@ -95,7 +96,7 @@ Last updated: 3/2/2022, 12:22:48 AM
 <details><summary><code>native-messaging-connect-id</code> </summary><div><p>If set when kNativeMessagingConnectHost and kNativeMessagingConnectExtension are specified, is reflected to the native messaging host as a command line parameter.</p></div></details>
 <details><summary><code>no-default-browser-check</code> </summary><div><p>Disables the default browser check. Useful for UI/browser tests where we want to avoid having the default browser info-bar displayed.</p></div></details>
 <details><summary><code>no-experiments</code> </summary><div><p>Disables all experiments set on about:flags. Does not disable about:flags itself. Useful if an experiment makes chrome crash at startup: One can start chrome with --no-experiments, disable the problematic lab at about:flags and then restart chrome without this switch again.</p></div></details>
-<details><summary><code>no-first-run</code> </summary><div><p>Skip First Run tasks, whether or not it's actually the First Run. Overridden by kForceFirstRun. This does not drop the First Run sentinel and thus doesn't prevent first run from occuring the next time chrome is launched without this flag.</p></div></details>
+<details><summary><code>no-first-run</code> </summary><div><p>Skip First Run tasks, whether or not it's actually the First Run, and the What's New page. Overridden by kForceFirstRun (for FRE) and kForceWhatsNew (for What's New). This does not drop the First Run sentinel and thus doesn't prevent first run from occurring the next time chrome is launched without this flag. It also does not update the last What's New milestone, so does not prevent What's New from occurring the next time chrome is launched without this flag.</p></div></details>
 <details><summary><code>no-pings</code> </summary><div><p>Don't send hyperlink auditing pings</p></div></details>
 <details><summary><code>no-proxy-server</code> </summary><div><p>Don't use a proxy server, always make direct connections. Overrides any other proxy server flags that are passed.</p></div></details>
 <details><summary><code>no-service-autorun</code> </summary><div><p>Disables the service process from adding itself as an autorun process. This does not delete existing autorun registrations, it just prevents the service from registering a new one.</p></div></details>
