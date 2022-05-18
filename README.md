@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/17/2022, 12:22:30 AM
+Last updated: 5/18/2022, 12:20:38 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -41,7 +41,6 @@ Last updated: 5/17/2022, 12:22:30 AM
 <details><summary><code>diagnostics-format</code> </summary><div><p>Sets the output format for diagnostic modes enabled by diagnostics flag.</p></div></details>
 <details><summary><code>diagnostics-recovery</code> </summary><div><p>Tells the diagnostics mode to do the requested recovery step(s).</p></div></details>
 <details><summary><code>disable-background-networking</code> </summary><div><p>Disable several subsystems which run network requests in the background. This is for use when doing network performance testing to avoid noise in the measurements.</p></div></details>
-<details><summary><code>disable-client-side-phishing-detection</code> </summary><div><p>Disables the client-side phishing detection feature. Note that even if client-side phishing detection is enabled, it will only be active if the user has opted in to UMA stats and SafeBrowsing is enabled in the preferences.</p></div></details>
 <details><summary><code>disable-component-extensions-with-background-pages</code> </summary><div><p>Disable default component extensions with background pages - useful for performance tests where these pages may interfere with perf results.</p></div></details>
 <details><summary><code>disable-component-update</code> </summary><div></div></details>
 <details><summary><code>disable-default-apps</code> </summary><div><p>Disables installation of default apps on first run. This is used during automated testing.</p></div></details>
