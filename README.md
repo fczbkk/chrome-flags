@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/25/2022, 12:25:43 AM
+Last updated: 5/26/2022, 12:23:06 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -100,6 +100,7 @@ Last updated: 5/25/2022, 12:25:43 AM
 <details><summary><code>new-window</code> </summary><div><p>Launches URL in new browser window.</p></div></details>
 <details><summary><code>pack-extension</code> </summary><div><p>Packages an extension to a .crx installable file from a given directory.</p></div></details>
 <details><summary><code>pack-extension-key</code> </summary><div><p>Optional PEM private key to use in signing packaged .crx.</p></div></details>
+<details><summary><code>pre-crashpad-crash-test</code> </summary><div><p>Causes the browser process to crash very early in startup, just before crashpad (or breakpad) is initialized.</p></div></details>
 <details><summary><code>prediction-service-mock-likelihood</code> </summary><div><p>Used to mock the response received from the Web Permission Prediction Service. Used for testing.</p></div></details>
 <details><summary><code>preinstalled-web-apps-dir</code> </summary><div><p>A directory where Chrome looks for json files describing default/preinstalled web apps. This overrides any default directory to load preinstalled web apps from.</p></div></details>
 <details><summary><code>privet-ipv6-only</code> </summary><div><p>Use IPv6 only for privet HTTP.</p></div></details>
