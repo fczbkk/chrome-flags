@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/30/2022, 12:27:08 AM
+Last updated: 5/31/2022, 12:23:02 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -33,6 +33,7 @@ Last updated: 5/30/2022, 12:27:08 AM
 <details><summary><code>cipher-suite-blacklist</code> </summary><div><p>Comma-separated list of SSL cipher suites to disable.</p></div></details>
 <details><summary><code>crash-on-hang-threads</code> </summary><div><p>Comma-separated list of BrowserThreads that cause browser process to crash if the given browser thread is not responsive. UI/IO are the BrowserThreads that are supported. For example: --crash-on-hang-threads=UI:18,IO:18 --> Crash the browser if UI or IO is not responsive for 18 seconds while the other browser thread is responsive.</p></div></details>
 <details><summary><code>create-browser-on-startup-for-tests</code> </summary><div><p>Some platforms like ChromeOS default to empty desktop. Browser tests may need to add this switch so that at least one browser instance is created on startup. TODO(nkostylev): Investigate if this switch could be removed. (http://crbug.com/148675)</p></div></details>
+<details><summary><code>credits</code> </summary><div><p>Prints licensing information (same content as found in about:credits) and quits.</p></div></details>
 <details><summary><code>custom-devtools-frontend</code> </summary><div><p>Specifies the http:// endpoint which will be used to serve devtools://devtools/custom/<path> Or a file:// URL to specify a custom file path to load from for devtools://devtools/bundled/<path></p></div></details>
 <details><summary><code>debug-enable-frame-toggle</code> </summary><div><p>Enables a frame context menu item that toggles the frame in and out of glass mode (Windows Vista and up only).</p></div></details>
 <details><summary><code>debug-packed-apps</code> </summary><div><p>Adds debugging entries such as Inspect Element to context menus of packed apps.</p></div></details>
