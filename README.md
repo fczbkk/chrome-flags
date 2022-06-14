@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/13/2022, 12:25:37 AM
+Last updated: 6/14/2022, 12:26:50 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -64,6 +64,7 @@ Last updated: 6/13/2022, 12:25:37 AM
 <details><summary><code>enable-domain-reliability</code> </summary><div><p>Enables Domain Reliability Monitoring.</p></div></details>
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
+<details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
 <details><summary><code>enable-nacl</code> </summary><div><p>Runs the Native Client inside the renderer process and enables GPU plugin (internally adds lEnableGpuPlugin to the command line).</p></div></details>
 <details><summary><code>enable-net-benchmarking</code> </summary><div><p>Enables the network-related benchmarking extensions.</p></div></details>
 <details><summary><code>enable-potentially-annoying-security-features</code> </summary><div><p>Enables a number of potentially annoying security features (strict mixed content mode, powerful feature restrictions, etc.)</p></div></details>
