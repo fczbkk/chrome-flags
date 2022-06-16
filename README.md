@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/15/2022, 12:25:53 AM
+Last updated: 6/16/2022, 12:22:27 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -147,6 +147,7 @@ Last updated: 6/15/2022, 12:25:53 AM
 <details><summary><code>webrtc-event-log-proactive-pruning-delta</code> </summary><div><p>Sets the delay (in seconds) between proactive prunings of remote-bound WebRTC event logs which are pending upload. All positive values are legal. All negative values are illegal, and ignored. If set to 0, the meaning is "no proactive pruning".</p></div></details>
 <details><summary><code>webrtc-event-log-upload-delay-ms</code> </summary><div><p>WebRTC event logs will only be uploaded if the conditions hold for this many milliseconds.</p></div></details>
 <details><summary><code>webrtc-event-log-upload-no-suppression</code> </summary><div><p>Normally, remote-bound WebRTC event logs are uploaded only when no peer connections are active. With this flag, the upload is never suppressed.</p></div></details>
+<details><summary><code>webrtc-ip-handling-policy</code> </summary><div><p>Override WebRTC IP handling policy to mimic the behavior when WebRTC IP handling policy is specified in Preferences.</p></div></details>
 <details><summary><code>window-position</code> </summary><div><p>Specify the initial window position: --window-position=x,y</p></div></details>
 <details><summary><code>window-size</code> </summary><div><p>Specify the initial window size: --window-size=w,h</p></div></details>
 <details><summary><code>window-workspace</code> </summary><div><p>Specify the initial window workspace: --window-workspace=id</p></div></details>
