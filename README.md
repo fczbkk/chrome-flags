@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/24/2022, 12:26:43 AM
+Last updated: 8/25/2022, 12:28:37 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -157,7 +157,6 @@ Last updated: 8/24/2022, 12:26:43 AM
 <details><summary><code>win-jumplist-action</code> </summary><div><p>Specifies which category option was clicked in the Windows Jumplist that resulted in a browser startup.</p></div></details>
 <details><summary><code>auth-spnego-account-type</code> </summary><div><p>Android authentication account type for SPNEGO authentication</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>enable-accessibility-tab-switcher</code> </summary><div><p>Enable the accessibility tab switcher.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
-<details><summary><code>enable-hung-renderer-infobar</code> </summary><div><p>Enables a hung renderer InfoBar allowing the user to close or wait on unresponsive web content.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-device-ownership</code> </summary><div><p>Forces the device to report being owned by an enterprise. This mimics the presence of an app signaling device ownerhsip.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-enable-night-mode</code> </summary><div><p>Forces the night mode to be enabled.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-show-update-menu-badge</code> </summary><div><p>Forces the update menu badge to show.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
