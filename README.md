@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/30/2022, 12:30:05 AM
+Last updated: 8/31/2022, 12:31:27 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -63,6 +63,7 @@ Last updated: 8/30/2022, 12:30:05 AM
 <details><summary><code>enable-cloud-print-proxy</code> </summary><div><p>This applies only when the process type is "service". Enables the Cloud Print Proxy component within the service process.</p></div></details>
 <details><summary><code>enable-critical-persisted-tab-data</code> </summary><div><p>Enables CriticalPersistedTabData - redesign/replacement for TabState</p></div></details>
 <details><summary><code>enable-domain-reliability</code> </summary><div><p>Enables Domain Reliability Monitoring.</p></div></details>
+<details><summary><code>enable-early-process-singleton</code> </summary><div><p>Enables the early process singleton feature. The process singleton will be held for the whole lifetime of BrowserImpl (see https://crbug.com/1340599).</p></div></details>
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
 <details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
