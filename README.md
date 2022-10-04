@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 10/3/2022, 12:30:13 AM
+Last updated: 10/4/2022, 12:36:53 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -118,6 +118,7 @@ Last updated: 10/3/2022, 12:30:13 AM
 <details><summary><code>proxy-bypass-list</code> </summary><div><p>Specifies a list of hosts for whom we bypass proxy settings and use direct connections. Ignored if --proxy-auto-detect or --no-proxy-server are also specified. This is a comma-separated list of bypass rules. See: "net/proxy_resolution/proxy_bypass_rules.h" for the format of these rules.</p></div></details>
 <details><summary><code>proxy-pac-url</code> </summary><div><p>Uses the pac script at the given URL</p></div></details>
 <details><summary><code>remote-debugging-targets</code> </summary><div><p>Porvides a list of addresses to discover DevTools remote debugging targets. The format is <host>:<port>,...,<host>:port.</p></div></details>
+<details><summary><code>restart</code> </summary><div><p>Indicates that Chrome was restarted (e.g., after a flag change). This is used to ignore the launch when recording the Launch.Mode2 metric.</p></div></details>
 <details><summary><code>restore-last-session</code> </summary><div><p>Indicates the last session should be restored on startup. This overrides the preferences value. Note that this does not force automatic session restore following a crash, so as to prevent a crash loop. This switch is used to implement support for OS-specific "continue where you left off" functionality on OS X and Windows.</p></div></details>
 <details><summary><code>save-page-as-mhtml</code> </summary><div><p>Disable saving pages as HTML-only, disable saving pages as HTML Complete (with a directory of sub-resources). Enable only saving pages as MHTML. See http://crbug.com/120416 for how to remove this switch.</p></div></details>
 <details><summary><code>silent-debugger-extension-api</code> </summary><div><p>Does not show an infobar when an extension attaches to a page using chrome.debugger page. Required to attach to extension background pages.</p></div></details>
