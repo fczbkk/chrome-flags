@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 11/8/2022, 12:25:57 AM
+Last updated: 11/9/2022, 12:26:32 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -45,7 +45,7 @@ Last updated: 11/8/2022, 12:25:57 AM
 <details><summary><code>disable-auto-maximize-for-tests</code> </summary><div><p>Disables the auto maximize feature on ChromeOS so that a browser window always starts in normal state. This is used by tests that do not want this auto maximizing behavior.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>disable-background-networking</code> </summary><div><p>Disable several subsystems which run network requests in the background. This is for use when doing network performance testing to avoid noise in the measurements.</p></div></details>
 <details><summary><code>disable-component-extensions-with-background-pages</code> </summary><div><p>Disable default component extensions with background pages - useful for performance tests where these pages may interfere with perf results.</p></div></details>
-<details><summary><code>disable-component-update</code> </summary><div></div></details>
+<details><summary><code>disable-component-update</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_COMPONENT_UPDATER)</code></p></div></details>
 <details><summary><code>disable-default-apps</code> </summary><div><p>Disables installation of default apps on first run. This is used during automated testing.</p></div></details>
 <details><summary><code>disable-domain-reliability</code> </summary><div><p>Disables Domain Reliability Monitoring.</p></div></details>
 <details><summary><code>disable-extensions</code> </summary><div><p>Disable extensions.</p></div></details>
@@ -122,6 +122,7 @@ Last updated: 11/8/2022, 12:25:57 AM
 <details><summary><code>restart</code> </summary><div><p>Indicates that Chrome was restarted (e.g., after a flag change). This is used to ignore the launch when recording the Launch.Mode2 metric.</p></div></details>
 <details><summary><code>restore-last-session</code> </summary><div><p>Indicates the last session should be restored on startup. This overrides the preferences value. Note that this does not force automatic session restore following a crash, so as to prevent a crash loop. This switch is used to implement support for OS-specific "continue where you left off" functionality on OS X and Windows.</p></div></details>
 <details><summary><code>save-page-as-mhtml</code> </summary><div><p>Disable saving pages as HTML-only, disable saving pages as HTML Complete (with a directory of sub-resources). Enable only saving pages as MHTML. See http://crbug.com/120416 for how to remove this switch.</p></div></details>
+<details><summary><code>screen-capture-audio-default-unchecked</code> </summary><div><p>This flag sets the checkboxes for sharing audio during screen capture to off by default. It is primarily intended to be used for tests.</p></div></details>
 <details><summary><code>silent-debugger-extension-api</code> </summary><div><p>Does not show an infobar when an extension attaches to a page using chrome.debugger page. Required to attach to extension background pages.</p></div></details>
 <details><summary><code>silent-launch</code> </summary><div><p>Causes Chrome to launch without opening any windows by default. Useful if one wishes to use Chrome as an ash server.</p></div></details>
 <details><summary><code>simulate-critical-update</code> </summary><div><p>Simulates a critical update being available.</p></div></details>
