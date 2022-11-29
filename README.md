@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 11/28/2022, 12:22:00 AM
+Last updated: 11/29/2022, 12:25:05 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -26,7 +26,6 @@ Last updated: 11/28/2022, 12:22:00 AM
 <details><summary><code>apps-gallery-update-url</code> </summary><div><p>The update url used by gallery/webstore extensions.</p></div></details>
 <details><summary><code>apps-gallery-url</code> </summary><div><p>The URL to use for the gallery link in the app launcher.</p></div></details>
 <details><summary><code>auth-server-allowlist</code> </summary><div><p>Allowlist for Negotiate Auth servers</p></div></details>
-<details><summary><code>auth-server-whitelist</code> </summary><div></div></details>
 <details><summary><code>auto-open-devtools-for-tabs</code> </summary><div><p>This flag makes Chrome auto-open DevTools window for each tab. It is intended to be used by developers and automation to not require user interaction for opening DevTools.</p></div></details>
 <details><summary><code>auto-select-desktop-capture-source</code> </summary><div><p>This flag makes Chrome auto-select the provided choice when an extension asks permission to start desktop capture. Should only be used for tests. For instance, --auto-select-desktop-capture-source="Entire screen" will automatically select sharing the entire screen in English locales. The switch value only needs to be substring of the capture source name, i.e. "display" would match "Built-in display" and "External display", whichever comes first.</p></div></details>
 <details><summary><code>auto-select-tab-capture-source-by-title</code> </summary><div><p>This flag makes Chrome auto-select a tab with the provided title when the media-picker should otherwise be displayed to the user. This switch is very similar to kAutoSelectDesktopCaptureSource, but limits selection to tabs. This solves the issue of kAutoSelectDesktopCaptureSource being liable to accidentally capturing the Chromium window instead of the tab, as both have the same title if the tab is focused.</p></div></details>
