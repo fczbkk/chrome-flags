@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 12/6/2022, 12:20:26 AM
+Last updated: 12/7/2022, 12:22:41 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -76,6 +76,9 @@ Last updated: 12/6/2022, 12:20:26 AM
 <details><summary><code>enforce_strict</code> </summary><div></div></details>
 <details><summary><code>extensions-install-verification</code> </summary><div><p>Turns on extension install verification if it would not otherwise have been turned on.</p></div></details>
 <details><summary><code>extensions-not-webstore</code> </summary><div><p>Specifies a comma-separated list of extension ids that should be forced to be treated as not from the webstore when doing install verification.</p></div></details>
+<details><summary><code>ip-anonymization-proxy-server</code> </summary><div><p>Specifies a proxy server for origins specified in kIPAnonymizationProxyAllowList. This proxy will be used on a best-effort basis when normal proxy resolution would result in trying direct connections (possibly after trying some other proxy server).</p></div></details>
+<details><summary><code>ip-anonymization-proxy-allow-list</code> </summary><div><p>Specifies a list of origins on which to use the server specified by `kIPAnonymizationProxyServer`. if `kIPAnonymizationProxyServer` is empty this list will be ignored. This is intended as a reverse bypass rules list.</p></div></details>
+<details><summary><code>ip-anonymization-proxy-password</code> </summary><div><p>Specifies a value for the "password" header to be passed to the proxy specified by `kIPAnonymizationProxyServer`. if `kIPAnonymizationProxyServer` is empty this list will be ignored.</p></div></details>
 <details><summary><code>force-app-mode</code> </summary><div><p>Forces application mode. This hides certain system UI elements and forces the app to be installed if it hasn't been already.</p></div></details>
 <details><summary><code>force-first-run</code> </summary><div><p>Displays the First Run experience when the browser is started, regardless of whether or not it's actually the First Run (this overrides kNoFirstRun).</p></div></details>
 <details><summary><code>force-whats-new</code> </summary><div><p>Displays the What's New experience when the browser is started if it has not yet been shown for the current milestone (this overrides kNoFirstRun, without showing the First Run experience).</p></div></details>
