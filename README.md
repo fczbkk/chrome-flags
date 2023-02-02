@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 2/1/2023, 12:26:50 AM
+Last updated: 2/2/2023, 12:24:03 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -170,6 +170,7 @@ Last updated: 2/1/2023, 12:26:50 AM
 <details><summary><code>force-disable-signin-fre</code> </summary><div><p>Forces the FRE to go through the legacy sync consent flow for testing.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-update-menu-type</code> </summary><div><p>Forces the update menu type to a specific type.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>custom_summary</code> </summary><div><p>Forces a custom summary to be displayed below the update menu item.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
+<details><summary><code>force-hide-non-displayable-account-email-fre</code> </summary><div><p>Force hiding non-displayable account email during the FRE flow. Only for testing purposes.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>market-url-for-testing</code> </summary><div><p>Sets the market URL for Chrome for use in testing.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>crosh-command</code> </summary><div><p>Custom crosh command.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>disable-logging-redirect</code> </summary><div><p>Disables logging redirect for testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
