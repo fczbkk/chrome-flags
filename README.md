@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/14/2023, 12:21:29 AM
+Last updated: 3/15/2023, 12:23:34 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -49,7 +49,6 @@ Last updated: 3/14/2023, 12:21:29 AM
 <details><summary><code>disable-domain-reliability</code> </summary><div><p>Disables Domain Reliability Monitoring.</p></div></details>
 <details><summary><code>disable-extensions</code> </summary><div><p>Disable extensions.</p></div></details>
 <details><summary><code>disable-extensions-except</code> </summary><div><p>Disable extensions except those specified in a comma-separated list.</p></div></details>
-<details><summary><code>disable-extensions-file-access-check</code> </summary><div><p>Disable checking for user opt-in for extensions that want to inject script into file URLs (ie, always allow it). This is used during automated testing.</p></div></details>
 <details><summary><code>disable-print-preview</code> </summary><div><p>Disables print preview (For testing, and for users who don't like us. :[ )</p></div></details>
 <details><summary><code>disable-prompt-on-repost</code> </summary><div><p>Normally when the user attempts to navigate to a page that was the result of a post we prompt to make sure they want to. This switch may be used to disable that check. This switch is used during automated testing.</p></div></details>
 <details><summary><code>disable-stack-profiler</code> </summary><div><p>Disable stack profiling. Stack profiling may change performance. Disabling stack profiling is beneficial when comparing performance metrics with a build that has it disabled by default.</p></div></details>
