@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 4/24/2023, 12:22:21 AM
+Last updated: 4/25/2023, 12:21:35 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -144,6 +144,7 @@ Last updated: 4/24/2023, 12:22:21 AM
 <details><summary><code>system-log-upload-frequency</code> </summary><div><p>Frequency in Milliseconds for system log uploads. Should only be used for testing purposes.</p></div></details>
 <details><summary><code>auto-accept-this-tab-capture</code> </summary><div><p>This flag makes Chrome auto-accept/reject requests to capture the current tab. It should only be used for tests.</p></div></details>
 <details><summary><code>auto-reject-this-tab-capture</code> </summary><div></div></details>
+<details><summary><code>test-memory-log-delay-in-minutes</code> </summary><div><p>Custom delay for memory log. This should be used only for testing purpose.</p></div></details>
 <details><summary><code>test-name</code> </summary><div><p>Passes the name of the current running automated test to Chrome.</p></div></details>
 <details><summary><code>trusted-download-sources</code> </summary><div><p>Identifies a list of download sources as trusted, but only if proper group policy is set.</p></div></details>
 <details><summary><code>try-chrome-again</code> </summary><div><p>Experimental. Shows a dialog asking the user to try chrome. This flag is to be used only by the upgrade process.</p></div></details>
