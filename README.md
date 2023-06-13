@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/12/2023, 12:26:21 AM
+Last updated: 6/13/2023, 12:24:34 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -170,7 +170,6 @@ Last updated: 6/12/2023, 12:26:21 AM
 <details><summary><code>force-show-update-menu-badge</code> </summary><div><p>Forces the update menu badge to show.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-update-menu-type</code> </summary><div><p>Forces the update menu type to a specific type.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>custom_summary</code> </summary><div><p>Forces a custom summary to be displayed below the update menu item.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
-<details><summary><code>force-hide-non-displayable-account-email-fre</code> </summary><div><p>Force hiding non-displayable account email during the FRE flow. Only for testing purposes.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>market-url-for-testing</code> </summary><div><p>Sets the market URL for Chrome for use in testing.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>request-desktop-sites</code> </summary><div><p>Force enable user agent overrides to request desktop sites in Clank.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>crosh-command</code> </summary><div><p>Custom crosh command.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
