@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/20/2023, 12:22:53 AM
+Last updated: 6/21/2023, 12:23:57 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -50,6 +50,7 @@ Last updated: 6/20/2023, 12:22:53 AM
 <details><summary><code>disable-extensions</code> </summary><div><p>Disable extensions.</p></div></details>
 <details><summary><code>disable-extensions-except</code> </summary><div><p>Disable extensions except those specified in a comma-separated list.</p></div></details>
 <details><summary><code>disable-lazy-loading</code> </summary><div><p>Disables lazy loading of images and frames.</p></div></details>
+<details><summary><code>disable-nacl</code> </summary><div><p>Disables NaCl. If kEnableNaCl is also set, this switch takes precedence.</p></div></details>
 <details><summary><code>disable-print-preview</code> </summary><div><p>Disables print preview (For testing, and for users who don't like us. :[ )</p></div></details>
 <details><summary><code>disable-prompt-on-repost</code> </summary><div><p>Normally when the user attempts to navigate to a page that was the result of a post we prompt to make sure they want to. This switch may be used to disable that check. This switch is used during automated testing.</p></div></details>
 <details><summary><code>disable-stack-profiler</code> </summary><div><p>Disable stack profiling. Stack profiling may change performance. Disabling stack profiling is beneficial when comparing performance metrics with a build that has it disabled by default.</p></div></details>
@@ -66,7 +67,7 @@ Last updated: 6/20/2023, 12:22:53 AM
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
 <details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
-<details><summary><code>enable-nacl</code> </summary><div><p>Runs the Native Client inside the renderer process and enables GPU plugin (internally adds lEnableGpuPlugin to the command line).</p></div></details>
+<details><summary><code>enable-nacl</code> </summary><div><p>Allows NaCl to run in all contexts (such as open web). Note that kDisableNaCl disables NaCl in all contexts and takes precedence.</p></div></details>
 <details><summary><code>enable-net-benchmarking</code> </summary><div><p>Enables the network-related benchmarking extensions.</p></div></details>
 <details><summary><code>enable-potentially-annoying-security-features</code> </summary><div><p>Enables a number of potentially annoying security features (strict mixed content mode, powerful feature restrictions, etc.)</p></div></details>
 <details><summary><code>explicitly-allowed-ports</code> </summary><div><p>Allows overriding the list of restricted ports by passing a comma-separated list of port numbers.</p></div></details>
