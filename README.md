@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/27/2023, 12:26:48 AM
+Last updated: 6/28/2023, 12:27:07 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -125,6 +125,7 @@ Last updated: 6/27/2023, 12:26:48 AM
 <details><summary><code>screen-capture-audio-default-unchecked</code> </summary><div><p>This flag sets the checkboxes for sharing audio during screen capture to off by default. It is primarily intended to be used for tests.</p></div></details>
 <details><summary><code>silent-debugger-extension-api</code> </summary><div><p>Does not show an infobar when an extension attaches to a page using chrome.debugger page. Required to attach to extension background pages.</p></div></details>
 <details><summary><code>silent-launch</code> </summary><div><p>Causes Chrome to launch without opening any windows by default. Useful if one wishes to use Chrome as an ash server.</p></div></details>
+<details><summary><code>simulate-browsing-data-lifetime</code> </summary><div><p>Sets the BrowsingDataLifetime policy to a very short value (shorter than normally possible) for testing purposes.</p></div></details>
 <details><summary><code>simulate-critical-update</code> </summary><div><p>Simulates a critical update being available.</p></div></details>
 <details><summary><code>simulate-elevated-recovery</code> </summary><div><p>Simulates that elevation is needed to recover upgrade channel.</p></div></details>
 <details><summary><code>simulate-outdated</code> </summary><div><p>Simulates that current version is outdated.</p></div></details>
