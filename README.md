@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/25/2023, 12:25:04 AM
+Last updated: 7/26/2023, 12:23:42 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -62,6 +62,7 @@ Last updated: 7/25/2023, 12:25:04 AM
 <details><summary><code>enable-cloud-print-proxy</code> </summary><div><p>This applies only when the process type is "service". Enables the Cloud Print Proxy component within the service process.</p></div></details>
 <details><summary><code>enable-critical-persisted-tab-data</code> </summary><div><p>Enables CriticalPersistedTabData - redesign/replacement for TabState</p></div></details>
 <details><summary><code>enable-domain-reliability</code> </summary><div><p>Enables Domain Reliability Monitoring.</p></div></details>
+<details><summary><code>enable-download-warning-improvements</code> </summary><div><p>Enables a number of UI improvements to downloads, download scanning, and download warnings.</p></div></details>
 <details><summary><code>enable-early-process-singleton</code> </summary><div><p>Enables the early process singleton feature. The process singleton will be held for the whole lifetime of BrowserImpl (see https://crbug.com/1340599).</p></div></details>
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
@@ -210,6 +211,7 @@ Last updated: 7/25/2023, 12:25:04 AM
 <details><summary><code>guest</code> </summary><div><p>Causes the browser to launch directly in guest mode.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
 <details><summary><code>list-apps</code> </summary><div><p>Writes open and installed web apps for each profile to the specified file without launching a new browser window or tab. Pass a absolute file path to specify where to output the information. Can be used together with optional --profile-base-name switch to only write information for a given profile.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-base-name</code> </summary><div><p>Pass the basename of the profile directory to specify which profile to get information. Only relevant when used with --list-apps switch.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
+<details><summary><code>profile-management-attributes</code> </summary><div><p>Domains and associated SAML attributes for which third-party profile management should be enabled. Input should be in JSON format.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>webapk-server-url</code> </summary><div><p>Custom WebAPK server URL for the sake of testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH) || BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>use-system-default-printer</code> </summary><div><p>Uses the system default printer as the initially selected destination in print preview, instead of the most recently used destination.</p><p>CONDITION: <code>!BUILDFLAG(IS_CHROMEOS_ASH) && !BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>user-data-migrated</code> </summary><div><p>Indicates that this process is the product of a relaunch following migration of User Data.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_DOWNGRADE_PROCESSING)</code></p></div></details>
