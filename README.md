@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 10/4/2023, 12:21:02 AM
+Last updated: 10/5/2023, 12:20:37 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -149,7 +149,6 @@ Last updated: 10/4/2023, 12:21:02 AM
 <details><summary><code>test-memory-log-delay-in-minutes</code> </summary><div><p>Custom delay for memory log. This should be used only for testing purpose.</p></div></details>
 <details><summary><code>test-name</code> </summary><div><p>Passes the name of the current running automated test to Chrome.</p></div></details>
 <details><summary><code>trusted-download-sources</code> </summary><div><p>Identifies a list of download sources as trusted, but only if proper group policy is set.</p></div></details>
-<details><summary><code>try-chrome-again</code> </summary><div><p>Experimental. Shows a dialog asking the user to try chrome. This flag is to be used only by the upgrade process.</p></div></details>
 <details><summary><code>unlimited-storage</code> </summary><div><p>Overrides per-origin quota settings to unlimited storage for any apps/origins.  This should be used only for testing purpose.</p></div></details>
 <details><summary><code>user-data-dir</code> </summary><div><p>Specifies the user data directory, which is where the browser will look for all of its state.</p></div></details>
 <details><summary><code>use-system-proxy-resolver</code> </summary><div><p>Uses WinHttp to resolve proxies instead of using Chromium's normal proxy resolution logic. This is only supported in Windows. TODO(https://crbug.com/1032820): Only use WinHttp whenever Chrome is exclusively using system proxy configs.</p></div></details>
