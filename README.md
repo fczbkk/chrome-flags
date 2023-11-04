@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 11/3/2023, 12:20:59 AM
+Last updated: 11/4/2023, 12:20:26 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -79,7 +79,6 @@ Last updated: 11/3/2023, 12:20:59 AM
 <details><summary><code>extensions-not-webstore</code> </summary><div><p>Specifies a comma-separated list of extension ids that should be forced to be treated as not from the webstore when doing install verification.</p></div></details>
 <details><summary><code>force-app-mode</code> </summary><div><p>Forces application mode. This hides certain system UI elements and forces the app to be installed if it hasn't been already.</p></div></details>
 <details><summary><code>force-devtools-available</code> </summary><div><p>Forces developer tools availability, no matter what values the enterprise policies DeveloperToolsDisabled and DeveloperToolsAvailability are set to.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
-<details><summary><code>force-enable-kerberos-on-first-run</code> </summary><div><p>In certain situations, the browser will cancel a page load the first time (per profile) a site tries to negotiate kerberos auth. Reloading the page will retry the kerberos negotiation. For some tools (e.g. some automation tools will start with a fresh profile on every run), this page load cancellation can cause hard-to-debug problems. This flag disables the load cancellation, even for a new profile. For more details see https://crbug.com/1493257.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX)</code></p></div></details>
 <details><summary><code>force-first-run</code> </summary><div><p>Displays the First Run experience when the browser is started, regardless of whether or not it's actually the First Run (this overrides kNoFirstRun).</p></div></details>
 <details><summary><code>force-whats-new</code> </summary><div><p>Displays the What's New experience when the browser is started if it has not yet been shown for the current milestone (this overrides kNoFirstRun, without showing the First Run experience).</p></div></details>
 <details><summary><code>hide-crash-restore-bubble</code> </summary><div><p>Does not show the crash restore bubble when the browser is started during the system startup phase in ChromeOS, if the ChromeOS full restore feature is enabled, because the ChromeOS full restore notification is shown for the user to select restore or not.</p></div></details>
