@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 1/5/2024, 12:22:19 AM
+Last updated: 1/6/2024, 12:22:10 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -198,7 +198,7 @@ Last updated: 1/5/2024, 12:22:19 AM
 <details><summary><code>no-pre-read-main-dll</code> </summary><div><p>Whether this process should PrefetchVirtualMemory on the contents of Chrome.dll. This warms up the pages in memory to speed up startup but might not be required in later renderers and/or GPU. For experiment info see crbug.com/1350257.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>notification-inline-reply</code> </summary><div><p>Used in combination with kNotificationLaunchId to specify the inline reply entered in the toast in the Windows Action Center.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>notification-launch-id</code> </summary><div><p>Used for launching Chrome when a toast displayed in the Windows Action Center has been activated. Should contain the launch ID encoded by Chrome.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
-<details><summary><code>/prefetch:5</code> </summary><div><p>/prefetch:# arguments for the browser process launched in background mode and for the watcher process. Use profiles 5, 6 and 7 as documented on kPrefetchArgument* in content_switches.cc.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p><p class="note">/prefetch:6 was formerly used by the watcher but is no longer used. /prefetch:7 is used by crashpad, which can't depend on constants defined here. See crashpad_win.cc for more details.</p></div></details>
+<details><summary><code>/prefetch:5</code> </summary><div><p>/prefetch:# arguments for the browser process launched in background mode and as documented in prefetch_type_win.h.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>show-icons</code> </summary><div><p>See kHideIcons.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>source-shortcut</code> </summary><div><p>When rendezvousing with an existing process, used to pass the path of the shortcut that launched the new Chrome process. This is used to record launch metrics.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>uninstall</code> </summary><div><p>Runs un-installation steps that were done by chrome first-run.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
