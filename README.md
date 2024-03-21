@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/20/2024, 12:21:24 AM
+Last updated: 3/21/2024, 12:22:13 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -196,7 +196,6 @@ Last updated: 3/20/2024, 12:21:24 AM
 <details><summary><code>make-chrome-default</code> </summary><div><p>Indicates whether Chrome should be set as the default browser during installation.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>enable-profile-shortcut-manager</code> </summary><div><p>Force-enables the profile shortcut manager. This is needed for tests since they use a custom-user-data-dir which disables this.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>hide-icons</code> </summary><div><p>Makes Windows happy by allowing it to show "Enable access to this program" checkbox in Add/Remove Programs->Set Program Access and Defaults. This only shows an error box because the only way to hide Chrome is by uninstalling it.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
-<details><summary><code>no-appcompat-clear</code> </summary><div><p>Don't try to clear downlevel OS appcompat layers out of Chrome's AppCompatFlags\Layers value in the Windows registry on process startup; see https://crbug.com/1482568.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>no-network-profile-warning</code> </summary><div><p>Whether or not the browser should warn if the profile is on a network share. This flag is only relevant for Windows currently.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>no-pre-read-main-dll</code> </summary><div><p>Whether this process should PrefetchVirtualMemory on the contents of Chrome.dll. This warms up the pages in memory to speed up startup but might not be required in later renderers and/or GPU. For experiment info see crbug.com/1350257.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>notification-inline-reply</code> </summary><div><p>Used in combination with kNotificationLaunchId to specify the inline reply entered in the toast in the Windows Action Center.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
