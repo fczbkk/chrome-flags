@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/25/2024, 12:23:10 AM
+Last updated: 3/26/2024, 12:21:06 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -67,7 +67,6 @@ Last updated: 3/25/2024, 12:23:10 AM
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
 <details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
 <details><summary><code>enable-lacros-fork-zygotes-at-login-screen</code> </summary><div><p>Makes Lacros fork the zygotes before blocking when prelaunched at login screen.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
-<details><summary><code>enable-lacros-shared-components-dir</code> </summary><div><p>Makes Lacros use a location shared across users for browser components.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>enable-nacl</code> </summary><div><p>Allows NaCl to run in all contexts (such as open web). Note that kDisableNaCl disables NaCl in all contexts and takes precedence.</p></div></details>
 <details><summary><code>enable-net-benchmarking</code> </summary><div><p>Enables the network-related benchmarking extensions.</p></div></details>
 <details><summary><code>enable-potentially-annoying-security-features</code> </summary><div><p>Enables a number of potentially annoying security features (strict mixed content mode, powerful feature restrictions, etc.)</p></div></details>
