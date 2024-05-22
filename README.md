@@ -8,12 +8,11 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/21/2024, 12:23:09 AM
+Last updated: 5/22/2024, 12:22:43 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
 <details><summary><code>allow-http-screen-capture</code> </summary><div><p>Allow non-secure origins to use the screen capture API and the desktopCapture extension API.</p></div></details>
-<details><summary><code>allow-profiles-outside-user-dir</code> </summary><div><p>Allows profiles to be created outside of the user data dir. TODO(crbug.com/40122009): Various places in Chrome assume that all profiles are within the user data dir. Some tests need to violate that assumption. The switch should be removed after this workaround is no longer needed.</p></div></details>
 <details><summary><code>allow-running-insecure-content</code> </summary><div><p>By default, an https page cannot run JavaScript, CSS or plugins from http URLs. This provides an override to get the old insecure behavior.</p></div></details>
 <details><summary><code>allow-silent-push</code> </summary><div><p>Allows Web Push notifications that do not show a notification.</p></div></details>
 <details><summary><code>app</code> </summary><div><p>Specifies that the associated value should be launched in "application" mode.</p></div></details>
