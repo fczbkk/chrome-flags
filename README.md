@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/27/2024, 12:23:55 AM
+Last updated: 5/28/2024, 12:23:13 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -174,7 +174,6 @@ Last updated: 5/27/2024, 12:23:55 AM
 <details><summary><code>custom_summary</code> </summary><div><p>Forces a custom summary to be displayed below the update menu item.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>market-url-for-testing</code> </summary><div><p>Sets the market URL for Chrome for use in testing.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>request-desktop-sites</code> </summary><div><p>Force enable user agent overrides to request desktop sites in Clank.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
-<details><summary><code>start-stack-profiler-with-java-name-hashing</code> </summary><div><p>Hash names of Java functions in SSM. Only has an effect if SSM is enabled.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>crosh-command</code> </summary><div><p>Custom crosh command.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>disable-logging-redirect</code> </summary><div><p>Disables logging redirect for testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>disable-login-screen-apps</code> </summary><div><p>Disables apps on the login screen. By default, they are allowed and can be installed through policy.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
