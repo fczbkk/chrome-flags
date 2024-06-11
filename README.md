@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/10/2024, 12:24:45 AM
+Last updated: 6/11/2024, 12:23:32 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -191,6 +191,8 @@ Last updated: 6/10/2024, 12:24:45 AM
 <details><summary><code>relauncher</code> </summary><div><p>A process type (switches::kProcessType) that relaunches the browser. See chrome/browser/mac/relauncher.h.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>dmg-device</code> </summary><div><p>When switches::kProcessType is switches::kRelauncherProcess, if this switch is also present, the relauncher process will unmount and eject a mounted disk image and move its disk image file to the trash.  The argument's value must be a BSD device name of the form "diskN" or "diskNsM".</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>make-chrome-default</code> </summary><div><p>Indicates whether Chrome should be set as the default browser during installation.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
+<details><summary><code>code-sign-clone-cleanup</code> </summary><div><p>A process type (switches::kProcessType) that cleans up the browser's temporary code sign clone.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
+<details><summary><code>unique-temp-dir-suffix</code> </summary><div><p>When switches::kProcessType is switches::kCodeSignCloneCleanupProcess this switch is required. The value must be the unique suffix portion of the temporary directory that contains the clone. The full path will be reconstructed by the cleanup process.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>enable-profile-shortcut-manager</code> </summary><div><p>Force-enables the profile shortcut manager. This is needed for tests since they use a custom-user-data-dir which disables this.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>hide-icons</code> </summary><div><p>Makes Windows happy by allowing it to show "Enable access to this program" checkbox in Add/Remove Programs->Set Program Access and Defaults. This only shows an error box because the only way to hide Chrome is by uninstalling it.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>no-network-profile-warning</code> </summary><div><p>Whether or not the browser should warn if the profile is on a network share. This flag is only relevant for Windows currently.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
