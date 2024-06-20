@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/19/2024, 12:23:53 AM
+Last updated: 6/20/2024, 12:23:20 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -138,7 +138,6 @@ Last updated: 6/19/2024, 12:23:53 AM
 <details><summary><code>simulate-outdated-no-au</code> </summary><div><p>Simulates that current version is outdated and auto-update is off.</p></div></details>
 <details><summary><code>simulate-upgrade</code> </summary><div><p>Simulates an update being available.</p></div></details>
 <details><summary><code>simulate-idle-timeout</code> </summary><div><p>Sets the IdleTimeout policy to a very short value (shorter than normally possible) for testing purposes.</p></div></details>
-<details><summary><code>skip-local-upm-gms-core-version-check-for-testing</code> </summary><div><p>Causes password_manager_android_util::SetUsesSplitStoresAndUPMForLocal() to ignore the min GmsCore version requirement. TODO(crbug.com/324370397): Remove once min GmsCore version running on the bots is above the checked value.</p></div></details>
 <details><summary><code>ssl-version-max</code> </summary><div><p>Specifies the maximum SSL/TLS version ("tls1.2" or "tls1.3").</p></div></details>
 <details><summary><code>ssl-version-min</code> </summary><div><p>Specifies the minimum SSL/TLS version ("tls1.2" or "tls1.3").</p></div></details>
 <details><summary><code>tls1.2</code> </summary><div><p>TLS 1.2 mode for |kSSLVersionMax| and |kSSLVersionMin| switches.</p></div></details>
