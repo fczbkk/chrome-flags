@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/3/2024, 12:24:02 AM
+Last updated: 7/4/2024, 12:23:47 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -21,9 +21,9 @@ Last updated: 7/3/2024, 12:24:02 AM
 <details><summary><code>app-mode-auth-code</code> </summary><div><p>Value of GAIA auth code for --force-app-mode.</p></div></details>
 <details><summary><code>app-mode-oauth-token</code> </summary><div><p>Value of OAuth2 refresh token for --force-app-mode.</p></div></details>
 <details><summary><code>app-run-on-os-login-mode</code> </summary><div><p>This is used along with kAppId to indicate an app was launched during OS login, and which mode the app was launched in.</p></div></details>
-<details><summary><code>apps-gallery-download-url</code> </summary><div><p>The URL that the webstore APIs download extensions from. Note: the URL must contain one '%s' for the extension ID.</p></div></details>
-<details><summary><code>apps-gallery-update-url</code> </summary><div><p>The update url used by gallery/webstore extensions.</p></div></details>
-<details><summary><code>apps-gallery-url</code> </summary><div><p>The URL to use for the gallery link in the app launcher.</p></div></details>
+<details><summary><code>apps-gallery-download-url</code> </summary><div><p>Overrides the URL that the webstore APIs download extensions from. Note: the URL must contain one '%s' for the extension ID.</p></div></details>
+<details><summary><code>apps-gallery-update-url</code> </summary><div><p>Overrides the update url used by webstore extensions.</p></div></details>
+<details><summary><code>apps-gallery-url</code> </summary><div><p>Overrides the url that the browser treats as the webstore, granting it the webstore APIs and giving it some special protections.</p></div></details>
 <details><summary><code>auth-server-allowlist</code> </summary><div><p>Allowlist for Negotiate Auth servers</p></div></details>
 <details><summary><code>auto-open-devtools-for-tabs</code> </summary><div><p>This flag makes Chrome auto-open DevTools window for each tab. It is intended to be used by developers and automation to not require user interaction for opening DevTools.</p></div></details>
 <details><summary><code>auto-select-desktop-capture-source</code> </summary><div><p>This flag makes Chrome auto-select the provided choice when an extension asks permission to start desktop capture. Should only be used for tests. For instance, --auto-select-desktop-capture-source="Entire screen" will automatically select sharing the entire screen in English locales. The switch value only needs to be substring of the capture source name, i.e. "display" would match "Built-in display" and "External display", whichever comes first.</p></div></details>
