@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/16/2024, 12:24:32 AM
+Last updated: 7/17/2024, 12:24:50 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -143,6 +143,7 @@ Last updated: 7/16/2024, 12:24:32 AM
 <details><summary><code>ssl-version-min</code> </summary><div><p>Specifies the minimum SSL/TLS version ("tls1.2" or "tls1.3").</p></div></details>
 <details><summary><code>tls1.2</code> </summary><div><p>TLS 1.2 mode for |kSSLVersionMax| and |kSSLVersionMin| switches.</p></div></details>
 <details><summary><code>tls1.3</code> </summary><div><p>TLS 1.3 mode for |kSSLVersionMax| and |kSSLVersionMin| switches.</p></div></details>
+<details><summary><code>stack-profiler-thread-pool</code> </summary><div><p>Use the thread pool for stack profiler.</p></div></details>
 <details><summary><code>start-maximized</code> </summary><div><p>Starts the browser maximized, regardless of any previous settings.</p></div></details>
 <details><summary><code>start-stack-profiler</code> </summary><div><p>Starts the stack sampling profiler in the child process.</p></div></details>
 <details><summary><code>browser-test</code> </summary><div><p>Browser test mode for the |kStartStackProfiler| switch. Limits the profile durations to be significantly less than the test timeout. On ChromeOS, forces the stack sampling profiler to run on all processes as well.</p></div></details>
