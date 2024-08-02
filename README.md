@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/1/2024, 12:27:45 AM
+Last updated: 8/2/2024, 12:24:24 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -43,7 +43,7 @@ Last updated: 8/1/2024, 12:27:45 AM
 <details><summary><code>disable-auto-maximize-for-tests</code> </summary><div><p>Disables the auto maximize feature on ChromeOS so that a browser window always starts in normal state. This is used by tests that do not want this auto maximizing behavior.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>disable-background-networking</code> </summary><div><p>Disable several subsystems which run network requests in the background. This is for use when doing network performance testing to avoid noise in the measurements.</p></div></details>
 <details><summary><code>disable-component-extensions-with-background-pages</code> </summary><div><p>Disable default component extensions with background pages - useful for performance tests where these pages may interfere with perf results.</p></div></details>
-<details><summary><code>disable-component-update</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_COMPONENT_UPDATER)</code></p></div></details>
+<details><summary><code>disable-component-update</code> </summary><div></div></details>
 <details><summary><code>disable-crashpad-for-testing</code> </summary><div><p>Disables crashpad initialization for testing. The crashpad binary will not run, and thus will not detect and symbolize crashes.</p></div></details>
 <details><summary><code>disable-default-apps</code> </summary><div><p>Disables installation of default apps on first run. This is used during automated testing.</p></div></details>
 <details><summary><code>disable-domain-reliability</code> </summary><div><p>Disables Domain Reliability Monitoring.</p></div></details>
