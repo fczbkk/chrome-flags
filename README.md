@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/13/2024, 12:25:53 AM
+Last updated: 8/14/2024, 12:25:03 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -147,7 +147,6 @@ Last updated: 8/13/2024, 12:25:53 AM
 <details><summary><code>start-stack-profiler</code> </summary><div><p>Starts the stack sampling profiler in the child process.</p></div></details>
 <details><summary><code>browser-test</code> </summary><div><p>Browser test mode for the |kStartStackProfiler| switch. Limits the profile durations to be significantly less than the test timeout. On ChromeOS, forces the stack sampling profiler to run on all processes as well.</p></div></details>
 <details><summary><code>storage-pressure-notification-interval</code> </summary><div><p>Interval, in minutes, used for storage pressure notification throttling. Useful for developers testing applications that might use non-trivial amounts of disk space.</p></div></details>
-<details><summary><code>managed-user-id</code> </summary><div><p>Sets the supervised user ID for any loaded or newly created profile to the given value. Pass an empty string to mark the profile as non-supervised. Used for testing.</p></div></details>
 <details><summary><code>system-log-upload-frequency</code> </summary><div><p>Frequency in Milliseconds for system log uploads. Should only be used for testing purposes.</p></div></details>
 <details><summary><code>auto-accept-this-tab-capture</code> </summary><div><p>This flag makes Chrome auto-accept/reject requests to capture the current tab. It should only be used for tests.</p></div></details>
 <details><summary><code>auto-reject-this-tab-capture</code> </summary><div></div></details>
