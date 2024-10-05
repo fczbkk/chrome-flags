@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 10/4/2024, 12:27:56 AM
+Last updated: 10/5/2024, 12:27:40 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -171,6 +171,7 @@ Last updated: 10/4/2024, 12:27:56 AM
 <details><summary><code>winhttp-proxy-resolver</code> </summary><div><p>Uses WinHTTP to fetch and evaluate PAC scripts. Otherwise the default is to use Chromium's network stack to fetch, and V8 to evaluate.</p></div></details>
 <details><summary><code>win-jumplist-action</code> </summary><div><p>Specifies which category option was clicked in the Windows Jumplist that resulted in a browser startup.</p></div></details>
 <details><summary><code>auth-spnego-account-type</code> </summary><div><p>Android authentication account type for SPNEGO authentication</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
+<details><summary><code>disable-default-browser-promo</code> </summary><div><p>Disable the default browser promo.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-device-ownership</code> </summary><div><p>Forces the device to report being owned by an enterprise. This mimics the presence of an app signaling device ownership.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-enable-night-mode</code> </summary><div><p>Forces the night mode to be enabled.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-show-update-menu-badge</code> </summary><div><p>Forces the update menu badge to show.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
