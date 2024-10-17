@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 10/16/2024, 12:28:12 AM
+Last updated: 10/17/2024, 12:28:14 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -215,6 +215,7 @@ Last updated: 10/16/2024, 12:28:12 AM
 <details><summary><code>allow-nacl-socket-api</code> </summary><div><p>Specifies comma-separated list of extension ids or hosts to grant access to TCP/UDP socket APIs.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_PLUGINS)</code></p></div></details>
 <details><summary><code>enable-new-app-menu-icon</code> </summary><div><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
 <details><summary><code>guest</code> </summary><div><p>Causes the browser to launch directly in guest mode.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
+<details><summary><code>force-ntp-mobile-promo</code> </summary><div><p>Forces the NTP mobile promo to appear without any preconditions.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
 <details><summary><code>list-apps</code> </summary><div><p>Writes open and installed web apps for each profile to the specified file without launching a new browser window or tab. Pass a absolute file path to specify where to output the information. Can be used together with optional --profile-base-name switch to only write information for a given profile.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-base-name</code> </summary><div><p>Pass the basename of the profile directory to specify which profile to get information. Only relevant when used with --list-apps switch.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-management-attributes</code> </summary><div><p>Domains and associated SAML attributes for which third-party profile management should be enabled. Input should be in JSON format.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
