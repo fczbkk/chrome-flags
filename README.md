@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 1/27/2025, 12:29:15 AM
+Last updated: 1/28/2025, 12:28:29 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -181,11 +181,7 @@ Last updated: 1/27/2025, 12:29:15 AM
 <details><summary><code>crosh-command</code> </summary><div><p>Custom crosh command.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>disable-logging-redirect</code> </summary><div><p>Disables logging redirect for testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>disable-login-screen-apps</code> </summary><div><p>Disables apps on the login screen. By default, they are allowed and can be installed through policy.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
-<details><summary><code>short-merge-session-timeout-for-test</code> </summary><div><p>Use a short (1 second) timeout for merge session loader throttle testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
-<details><summary><code>scheduler-configuration</code> </summary><div><p>Selects the scheduler configuration specified in the parameter.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
-<details><summary><code>conservative</code> </summary><div><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
-<details><summary><code>performance</code> </summary><div><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
-<details><summary><code>scheduler-configuration-default";#elseconst char kSavePageAsMHTML[] = "save-page-as-mhtml</code> </summary><div><p>Specifies what the default scheduler configuration value is if the user does not set one.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p><p class="note">Enables saving webpages as MHTML (Webpage, Single) by default, instead of saving as HTML with a directory of sub-resources. (Webpage, Complete). See http://crbug.com/40179885 for how to remove this switch.</p></div></details>
+<details><summary><code>short-merge-session-timeout-for-test";#elseconst char kSavePageAsMHTML[] = "save-page-as-mhtml</code> </summary><div><p>Use a short (1 second) timeout for merge session loader throttle testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS_ASH)</code></p><p class="note">Enables saving webpages as MHTML (Webpage, Single) by default, instead of saving as HTML with a directory of sub-resources. (Webpage, Complete). See http://crbug.com/40179885 for how to remove this switch.</p></div></details>
 <details><summary><code>help</code> </summary><div><p>These flags show the man page on Linux. They are equivalent to each other.</p><p>CONDITION: <code>BUILDFLAG(IS_POSIX) && !BUILDFLAG(IS_MAC) && !BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>h</code> </summary><div><p>CONDITION: <code>BUILDFLAG(IS_POSIX) && !BUILDFLAG(IS_MAC) && !BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
 <details><summary><code>class</code> </summary><div><p>The same as the --class argument in X applications.  Overrides the WM_CLASS window property with the given value.</p><p>CONDITION: <code>BUILDFLAG(IS_POSIX) && !BUILDFLAG(IS_MAC) && !BUILDFLAG(IS_CHROMEOS_ASH)</code></p></div></details>
