@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 1/31/2025, 12:28:14 AM
+Last updated: 2/1/2025, 12:30:42 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -114,6 +114,7 @@ Last updated: 1/31/2025, 12:28:14 AM
 <details><summary><code>new-window</code> </summary><div><p>Launches URL in new browser window.</p></div></details>
 <details><summary><code>pack-extension</code> </summary><div><p>Packages an extension to a .crx installable file from a given directory.</p></div></details>
 <details><summary><code>pack-extension-key</code> </summary><div><p>Optional PEM private key to use in signing packaged .crx.</p></div></details>
+<details><summary><code>password-change-url</code> </summary><div><p>This switch allows testing password change feature on provided URL. Password change will be offered by submitting password form on any URL with matching eTLD+1.</p></div></details>
 <details><summary><code>pre-crashpad-crash-test</code> </summary><div><p>Causes the browser process to crash very early in startup, just before crashpad (or breakpad) is initialized.</p></div></details>
 <details><summary><code>prediction-service-mock-likelihood</code> </summary><div><p>Used to mock the response received from the Web Permission Prediction Service. Used for testing.</p></div></details>
 <details><summary><code>preinstalled-web-apps-dir</code> </summary><div><p>A directory where Chrome looks for json files describing default/preinstalled web apps. This overrides any default directory to load preinstalled web apps from.</p></div></details>
@@ -213,6 +214,8 @@ Last updated: 1/31/2025, 12:28:14 AM
 <details><summary><code>force-ntp-mobile-promo</code> </summary><div><p>Forces the NTP mobile promo to appear without any preconditions.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
 <details><summary><code>glic-guest-url</code> </summary><div><p>Overrides the glic guest URL.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-webui-csp-override</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
+<details><summary><code>glic-always-open-fre</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
+<details><summary><code>glic-fre-url</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>list-apps</code> </summary><div><p>Writes open and installed web apps for each profile to the specified file without launching a new browser window or tab. Pass a absolute file path to specify where to output the information. Can be used together with optional --profile-base-name switch to only write information for a given profile.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-base-name</code> </summary><div><p>Pass the basename of the profile directory to specify which profile to get information. Only relevant when used with --list-apps switch.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-management-attributes</code> </summary><div><p>Domains and associated SAML attributes for which third-party profile management should be enabled. Input should be in JSON format.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
