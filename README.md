@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 2/12/2025, 12:28:35 AM
+Last updated: 2/13/2025, 12:28:39 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -214,7 +214,7 @@ Last updated: 2/12/2025, 12:28:35 AM
 <details><summary><code>glic-guest-url</code> </summary><div><p>Overrides the glic guest URL.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-webui-csp-override</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-always-open-fre</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
-<details><summary><code>glic-fre-url</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
+<details><summary><code>glic-fre-url";const char kGlicOpenOnStartup[] = "glic-open-on-startup</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p><p class="note">Use --glic-open-on-startup=attached or --glic-open-on-startup=detached.</p></div></details>
 <details><summary><code>list-apps</code> </summary><div><p>Writes open and installed web apps for each profile to the specified file without launching a new browser window or tab. Pass a absolute file path to specify where to output the information. Can be used together with optional --profile-base-name switch to only write information for a given profile.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-base-name</code> </summary><div><p>Pass the basename of the profile directory to specify which profile to get information. Only relevant when used with --list-apps switch.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>profile-management-attributes</code> </summary><div><p>Domains and associated SAML attributes for which third-party profile management should be enabled. Input should be in JSON format.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
