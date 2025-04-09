@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 4/8/2025, 12:30:51 AM
+Last updated: 4/9/2025, 12:31:02 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -48,8 +48,6 @@ Last updated: 4/8/2025, 12:30:51 AM
 <details><summary><code>disable-crashpad-for-testing</code> </summary><div><p>Disables crashpad initialization for testing. The crashpad binary will not run, and thus will not detect and symbolize crashes.</p></div></details>
 <details><summary><code>disable-default-apps</code> </summary><div><p>Disables installation of default apps on first run. This is used during automated testing.</p></div></details>
 <details><summary><code>disable-domain-reliability</code> </summary><div><p>Disables Domain Reliability Monitoring.</p></div></details>
-<details><summary><code>disable-extensions</code> </summary><div><p>Disable extensions.</p></div></details>
-<details><summary><code>disable-extensions-except</code> </summary><div><p>Disable extensions except those specified in a comma-separated list.</p></div></details>
 <details><summary><code>disable-lazy-loading</code> </summary><div><p>Disables lazy loading of images and frames.</p></div></details>
 <details><summary><code>disable-nacl</code> </summary><div><p>Disables NaCl. If kEnableNaCl is also set, this switch takes precedence.</p></div></details>
 <details><summary><code>disable-print-preview</code> </summary><div><p>Disables print preview (For testing, and for users who don't like us. :[ )</p></div></details>
