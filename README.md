@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 4/24/2025, 12:31:43 AM
+Last updated: 4/25/2025, 12:32:13 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -126,6 +126,7 @@ Last updated: 4/24/2025, 12:31:43 AM
 <details><summary><code>proxy-pac-url</code> </summary><div><p>Uses the pac script at the given URL</p></div></details>
 <details><summary><code>proxy-server</code> </summary><div><p>Uses a specified proxy server, overrides system settings.</p></div></details>
 <details><summary><code>remote-debugging-targets</code> </summary><div><p>Provides a list of addresses to discover DevTools remote debugging targets. The format is <host>:<port>,...,<host>:port.</p></div></details>
+<details><summary><code>repair-all-valid-extensions</code> </summary><div><p>Indicates that all corrupted extensions should be repaired if they are are enabled by policy. This is mainly used after a user data downgrade.</p></div></details>
 <details><summary><code>restart</code> </summary><div><p>Indicates that Chrome was restarted (e.g., after a flag change). This is used to ignore the launch when recording the Launch.Mode2 metric.</p></div></details>
 <details><summary><code>restore-last-session</code> </summary><div><p>Indicates the last session should be restored on startup. This overrides the preferences value. Note that this does not force automatic session restore following a crash, so as to prevent a crash loop. This switch is used to implement support for OS-specific "continue where you left off" functionality on OS X and Windows.</p></div></details>
 <details><summary><code>same-tab</code> </summary><div><p>Indicates that the URL in the command line should open in the active tab instead of a new tab. In case of multiple URLS given as arguments, the first one will replace the active tab.</p></div></details>
