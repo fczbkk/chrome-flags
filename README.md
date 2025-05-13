@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/12/2025, 12:35:07 AM
+Last updated: 5/13/2025, 12:33:07 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -56,6 +56,7 @@ Last updated: 5/12/2025, 12:35:07 AM
 <details><summary><code>disable-zero-browsers-open-for-tests</code> </summary><div><p>Some tests seem to require the application to close when the last browser window is closed. Thus, we need a switch to force this behavior for ChromeOS Aura, disable "zero window mode". TODO(pkotwicz): Investigate if this bug can be removed. (http://crbug.com/119175)</p></div></details>
 <details><summary><code>disk-cache-dir</code> </summary><div><p>Use a specific disk cache location, rather than one derived from the UserDatadir.</p></div></details>
 <details><summary><code>disk-cache-size</code> </summary><div><p>Forces the maximum disk space to be used by the disk cache, in bytes.</p></div></details>
+<details><summary><code>do-not-de-elevate</code> </summary><div><p>Do not de-elevate the browser on launch. Used after de-elevating to prevent infinite loops.</p></div></details>
 <details><summary><code>dump-browser-histograms</code> </summary><div><p>Requests that a running browser process dump its collected histograms to a given file. The file is overwritten if it exists.</p></div></details>
 <details><summary><code>enable-audio-debug-recordings-from-extension</code> </summary><div><p>If the WebRTC logging private API is active, enables audio debug recordings.</p></div></details>
 <details><summary><code>enable-bookmark-undo</code> </summary><div><p>Enables the multi-level undo system for bookmarks.</p></div></details>
