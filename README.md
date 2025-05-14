@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/13/2025, 12:33:07 AM
+Last updated: 5/14/2025, 12:32:58 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -121,7 +121,7 @@ Last updated: 5/13/2025, 12:33:07 AM
 <details><summary><code>product-version</code> </summary><div><p>Outputs the product version information and quit. Used as an internal api to detect the installed version of Chrome on Linux.</p></div></details>
 <details><summary><code>profile-directory</code> </summary><div><p>Selects directory of profile to associate with the first browser launched.</p></div></details>
 <details><summary><code>ignore-profile-directory-if-not-exists</code> </summary><div><p>If provided with kProfileDirectory, does not create the profile if the profile directory doesn't exist.</p></div></details>
-<details><summary><code>profile-email</code> </summary><div><p>Like kProfileDirectory, but selects the profile by email address. If the email is not found in any existing profile, this switch has no effect. If both kProfileDirectory and kProfileUserName are specified, kProfileDirectory takes priority.</p></div></details>
+<details><summary><code>profile-email</code> </summary><div><p>Like kProfileDirectory, but selects the profile by email address. If the email is not found in any existing profile, this switch has no effect. If both kProfileDirectory and kProfileEmail are specified, kProfileDirectory takes priority.</p></div></details>
 <details><summary><code>proxy-auto-detect</code> </summary><div><p>Forces proxy auto-detection.</p></div></details>
 <details><summary><code>proxy-bypass-list</code> </summary><div><p>Specifies a list of hosts for whom we bypass proxy settings and use direct connections. Ignored if --proxy-auto-detect or --no-proxy-server are also specified. This is a comma-separated list of bypass rules. See: "net/proxy_resolution/proxy_bypass_rules.h" for the format of these rules.</p></div></details>
 <details><summary><code>proxy-pac-url</code> </summary><div><p>Uses the pac script at the given URL</p></div></details>
