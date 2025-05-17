@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/15/2025, 12:32:16 AM
+Last updated: 5/17/2025, 12:32:19 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -69,6 +69,7 @@ Last updated: 5/15/2025, 12:32:16 AM
 <details><summary><code>enable-nacl</code> </summary><div><p>Allows NaCl to run in all contexts (such as open web). Note that kDisableNaCl disables NaCl in all contexts and takes precedence.</p></div></details>
 <details><summary><code>enable-net-benchmarking</code> </summary><div><p>Enables the network-related benchmarking extensions.</p></div></details>
 <details><summary><code>enable-potentially-annoying-security-features</code> </summary><div><p>Enables a number of potentially annoying security features (strict mixed content mode, powerful feature restrictions, etc.)</p></div></details>
+<details><summary><code>experimental-ai-stable-channel</code> </summary><div><p>Allows experimental ai extension APIs to be used in stable channel. This disables chrome sign-in if set, regardless of channel.</p></div></details>
 <details><summary><code>explicitly-allowed-ports</code> </summary><div><p>Allows overriding the list of restricted ports by passing a comma-separated list of port numbers.</p></div></details>
 <details><summary><code>enable-extension-ai-data-collection</code> </summary><div><p>Name of the command line flag to allow the ai data collection extension API.</p></div></details>
 <details><summary><code>extension-content-verification</code> </summary><div><p>Name of the command line flag to force content verification to be on in one of various modes.</p></div></details>
