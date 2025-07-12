@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/11/2025, 12:35:08 AM
+Last updated: 7/12/2025, 12:35:07 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -210,8 +210,6 @@ Last updated: 7/11/2025, 12:35:08 AM
 <details><summary><code>uninstall-app-id</code> </summary><div><p>Specifies that the WebApp with the specified id should be uninstalled.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>pwa-launcher-version</code> </summary><div><p>Specifies the version of the Progressive-Web-App launcher that launched Chrome, used to determine whether to update all launchers. NOTE: changing this switch requires adding legacy handling for the previous method, as older PWA launchers still using this switch will rely on Chrome to update them to use the new method.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>debug-print</code> </summary><div><p>Enables support to debug printing subsystem.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_PRINT_PREVIEW) && !defined(OFFICIAL_BUILD)</code></p></div></details>
-<details><summary><code>allow-nacl-crxfs-api</code> </summary><div><p>Specifies comma-separated list of extension ids or hosts to grant access to CRX file system APIs.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_PLUGINS)</code></p></div></details>
-<details><summary><code>allow-nacl-file-handle-api</code> </summary><div><p>Specifies comma-separated list of extension ids or hosts to grant access to file handle APIs.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_PLUGINS)</code></p></div></details>
 <details><summary><code>enable-new-app-menu-icon</code> </summary><div><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
 <details><summary><code>guest</code> </summary><div><p>Causes the browser to launch directly in guest mode.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
 <details><summary><code>force-ntp-mobile-promo</code> </summary><div><p>Forces the NTP mobile promo to appear without any preconditions.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
