@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/5/2025, 12:37:22 AM
+Last updated: 8/6/2025, 12:37:11 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -61,6 +61,7 @@ Last updated: 8/5/2025, 12:37:22 AM
 <details><summary><code>enable-audio-debug-recordings-from-extension</code> </summary><div><p>If the WebRTC logging private API is active, enables audio debug recordings.</p></div></details>
 <details><summary><code>enable-bookmark-undo</code> </summary><div><p>Enables the multi-level undo system for bookmarks.</p></div></details>
 <details><summary><code>enable-cloud-print-proxy</code> </summary><div><p>This applies only when the process type is "service". Enables the Cloud Print Proxy component within the service process.</p></div></details>
+<details><summary><code>enable-devtools-pwa-handler</code> </summary><div><p>If enabled, DevTools will allow creating pwa_handler, to enable executing CDP methods (i.e. PWA.install) on browsers connected remotely</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>enable-domain-reliability</code> </summary><div><p>Enables Domain Reliability Monitoring.</p></div></details>
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
