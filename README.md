@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 9/24/2025, 12:31:44 AM
+Last updated: 9/25/2025, 12:31:26 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -116,6 +116,7 @@ Last updated: 9/24/2025, 12:31:44 AM
 <details><summary><code>no-startup-window</code> </summary><div><p>Does not automatically open a browser window on startup (used when launching Chrome for the purpose of hosting background apps).</p></div></details>
 <details><summary><code>on-the-fly-mhtml-hash-computation</code> </summary><div><p>Calculate the hash of an MHTML file as it is being saved. The browser process will write the serialized MHTML contents to a file and calculate its hash as it is streamed back from the renderer via a Mojo data pipe.</p></div></details>
 <details><summary><code>new-window</code> </summary><div><p>Launches URL in new browser window.</p></div></details>
+<details><summary><code>focus</code> </summary><div><p>Activates an existing tab or app window by URL or app id before creating anything new. Syntax: comma-ordered selectors. Bare URLs are exact. Add a trailing * for prefix. app:<app-id> targets PWAs. Example: --focus=https://meet.google.com/*,app:abc123</p></div></details>
 <details><summary><code>pack-extension</code> </summary><div><p>Packages an extension to a .crx installable file from a given directory.</p></div></details>
 <details><summary><code>pack-extension-key</code> </summary><div><p>Optional PEM private key to use in signing packaged .crx.</p></div></details>
 <details><summary><code>pre-crashpad-crash-test</code> </summary><div><p>Causes the browser process to crash very early in startup, just before crashpad (or breakpad) is initialized.</p></div></details>
