@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 10/17/2025, 12:32:00 AM
+Last updated: 10/18/2025, 12:29:47 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
@@ -79,8 +79,6 @@ Last updated: 10/17/2025, 12:32:00 AM
 <details><summary><code>enforce</code> </summary><div></div></details>
 <details><summary><code>enforce_strict</code> </summary><div></div></details>
 <details><summary><code>enable-extension-actor-api</code> </summary><div><p>Name of the command line flag to allow the experimental actor API.</p></div></details>
-<details><summary><code>extensions-install-verification</code> </summary><div><p>Turns on extension install verification if it would not otherwise have been turned on.</p></div></details>
-<details><summary><code>extensions-not-webstore</code> </summary><div><p>Specifies a comma-separated list of extension ids that should be forced to be treated as not from the webstore when doing install verification.</p></div></details>
 <details><summary><code>extensions-toolbar-zero-state-variation</code> </summary><div><p>Specifies the variation of Zero State extensions toolbar recommendation to show. When a user with zero extensions installed clicks on the extensions puzzle piece in the Chrome toolbar, Chrome displays a submenu suggesting the user to explore the Chrome Web Store.</p></div></details>
 <details><summary><code>extensions-toolbar-zero-state-single-web-store-link</code> </summary><div><p>This variation of the Zero State extensions toolbar recommendation presents the user with a single link to the Chrome Web Store home page.</p></div></details>
 <details><summary><code>extensions-toolbar-zero-state-explore-extensions-by-category</code> </summary><div><p>This variation of the Zero State extensions toolbar recommendation suggests extension categories the user can explore in the Chrome Web Store. (e.g. find coupons, increase productivity)</p></div></details>
