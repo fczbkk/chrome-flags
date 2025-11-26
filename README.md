@@ -8,9 +8,10 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 11/25/2025, 12:32:41 AM
+Last updated: 11/26/2025, 12:33:59 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
+<details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>allow-cross-origin-auth-prompt</code> </summary><div><p>Allows third-party content included on a page to prompt for a HTTP basic auth username/password pair.</p></div></details>
 <details><summary><code>allow-http-screen-capture</code> </summary><div><p>Allow non-secure origins to use the screen capture API and the desktopCapture extension API.</p></div></details>
 <details><summary><code>allow-running-insecure-content</code> </summary><div><p>By default, an https page cannot run JavaScript, CSS or plugins from http URLs. This provides an override to get the old insecure behavior.</p></div></details>
@@ -57,6 +58,7 @@ Last updated: 11/25/2025, 12:32:41 AM
 <details><summary><code>disable-zero-browsers-open-for-tests</code> </summary><div><p>Some tests seem to require the application to close when the last browser window is closed. Thus, we need a switch to force this behavior for ChromeOS Aura, disable "zero window mode". TODO(pkotwicz): Investigate if this bug can be removed. (http://crbug.com/119175)</p></div></details>
 <details><summary><code>disk-cache-dir</code> </summary><div><p>Use a specific disk cache location, rather than one derived from the UserDatadir.</p></div></details>
 <details><summary><code>disk-cache-size</code> </summary><div><p>Forces the maximum disk space to be used by the disk cache, in bytes.</p></div></details>
+<details><summary><code>do-not-create-nsapp-for-tests</code> </summary><div><p>Skips initializing the shares NSApplication instance in ChromeTestSuite.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>do-not-de-elevate</code> </summary><div><p>Do not de-elevate the browser on launch. Used after de-elevating to prevent infinite loops.</p></div></details>
 <details><summary><code>dump-browser-histograms</code> </summary><div><p>Requests that a running browser process dump its collected histograms to a given file. The file is overwritten if it exists.</p></div></details>
 <details><summary><code>enable-audio-debug-recordings-from-extension</code> </summary><div><p>If the WebRTC logging private API is active, enables audio debug recordings.</p></div></details>
