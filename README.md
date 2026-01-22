@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 1/21/2026, 12:37:48 AM
+Last updated: 1/22/2026, 12:38:12 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -216,6 +216,7 @@ Last updated: 1/21/2026, 12:37:48 AM
 <details><summary><code>show-icons</code> </summary><div><p>See kHideIcons.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>source-app-id</code> </summary><div><p>When rendezvousing with an existing process, used to indicate that the StartupInfoW of the new Chrome process had dwFlags == STARTF_TITLEISAPPID. This is used to record launch metrics.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>source-shortcut</code> </summary><div><p>When rendezvousing with an existing process, used to pass the path of the shortcut that launched the new Chrome process. This is used to record launch metrics.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
+<details><summary><code>startup-foreground-launch</code> </summary><div><p>Identifies Chrome instances that start in foreground mode at startup to record related metrics.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>uninstall</code> </summary><div><p>Runs un-installation steps that were done by chrome first-run.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>uninstall-app-id</code> </summary><div><p>Specifies that the WebApp with the specified id should be uninstalled.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>pwa-launcher-version</code> </summary><div><p>Specifies the version of the Progressive-Web-App launcher that launched Chrome, used to determine whether to update all launchers. NOTE: changing this switch requires adding legacy handling for the previous method, as older PWA launchers still using this switch will rely on Chrome to update them to use the new method.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
