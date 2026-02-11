@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 2/10/2026, 12:51:07 AM
+Last updated: 2/11/2026, 12:50:09 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -231,7 +231,8 @@ Last updated: 2/10/2026, 12:51:07 AM
 <details><summary><code>glic-admin-redirect-patterns</code> </summary><div><p>List of URL patterns in the glic webview to redirect to an admin blocked panel, as a space-separated list.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-reset-mi-enabled-by-tier</code> </summary><div><p>Reset local state pref kGlicMultiInstanceEnabledBySubscriptionTier to false. Intended for manual testing only.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-force-g1-for-mi</code> </summary><div><p>Override actual AI subscription tier by forcing G1 status, specifically for multi-instance enablement. Intended for manual testing only.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
-<details><summary><code>glic-guest-url-preset-autopush</code> </summary><div><p>Configure preset guest URLs for manual testing. These are saved to profile prefs and can be selected to override the default glic guest URL through corresponding entries in chrome://flags.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
+<details><summary><code>glic-guest-url-preset-autopush</code> </summary><div><p>Configure preset guest URLs for manual testing. These are saved to local state prefs and can be selected to override the default glic guest URL through corresponding entries in chrome://flags.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
+<details><summary><code>glic-guest-url-preset-staging</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-guest-url-preset-preprod</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>glic-guest-url-preset-prod</code> </summary><div><p>CONDITION: <code>BUILDFLAG(ENABLE_GLIC)</code></p></div></details>
 <details><summary><code>list-apps</code> </summary><div><p>Writes open and installed web apps for each profile to the specified file without launching a new browser window or tab. Pass a absolute file path to specify where to output the information. Can be used together with optional --profile-base-name switch to only write information for a given profile.</p><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_WIN)</code></p></div></details>
