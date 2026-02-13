@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 2/12/2026, 12:44:40 AM
+Last updated: 2/13/2026, 12:47:36 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -220,6 +220,8 @@ Last updated: 2/12/2026, 12:44:40 AM
 <details><summary><code>startup-foreground-launch</code> </summary><div><p>Identifies Chrome instances that start in foreground mode at startup to record related metrics.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>uninstall</code> </summary><div><p>Runs un-installation steps that were done by chrome first-run.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>uninstall-app-id</code> </summary><div><p>Specifies that the WebApp with the specified id should be uninstalled.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
+<details><summary><code>isolated</code> </summary><div><p>Specifies that the browser is running isolated and should not attempt to start a second isolated browser.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
+<details><summary><code>launch-isolated</code> </summary><div><p>Specifies that the browser should attempt to launch an isolated browser. TODO(crbug.com/433545123): This is a temporary switch - replace this with a configurable toggle in a future CL.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>pwa-launcher-version</code> </summary><div><p>Specifies the version of the Progressive-Web-App launcher that launched Chrome, used to determine whether to update all launchers. NOTE: changing this switch requires adding legacy handling for the previous method, as older PWA launchers still using this switch will rely on Chrome to update them to use the new method.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>debug-print</code> </summary><div><p>Enables support to debug printing subsystem.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_PRINT_PREVIEW) && !defined(OFFICIAL_BUILD)</code></p></div></details>
 <details><summary><code>enable-new-app-menu-icon</code> </summary><div><p>CONDITION: <code>BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || \</code></p></div></details>
