@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/12/2026, 12:38:24 AM
+Last updated: 3/13/2026, 12:43:53 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -19,8 +19,6 @@ Last updated: 3/12/2026, 12:38:24 AM
 <details><summary><code>app</code> </summary><div><p>Specifies that the associated value should be launched in "application" mode.</p></div></details>
 <details><summary><code>app-id</code> </summary><div><p>Specifies that the extension-app with the specified id should be launched according to its configuration.</p></div></details>
 <details><summary><code>app-launch-url-for-shortcuts-menu-item</code> </summary><div><p>Overrides the launch url of an app with the specified url. This is used along with kAppId to launch a given app with the url corresponding to an item in the app's shortcuts menu.</p></div></details>
-<details><summary><code>app-mode-auth-code</code> </summary><div><p>Value of GAIA auth code for --force-app-mode.</p></div></details>
-<details><summary><code>app-mode-oauth-token</code> </summary><div><p>Value of OAuth2 refresh token for --force-app-mode.</p></div></details>
 <details><summary><code>app-run-on-os-login-mode</code> </summary><div><p>This is used along with kAppId to indicate an app was launched during OS login, and which mode the app was launched in.</p></div></details>
 <details><summary><code>app-shim</code> </summary><div><p>A process type (switches::kProcessType) that is used by App Shim processes. See chrome/app_shim/app_shim_main_delegate.mm.</p></div></details>
 <details><summary><code>apps-gallery-download-url</code> </summary><div><p>Overrides the URL that the webstore APIs download extensions from. Note: the URL must contain one '%s' for the extension ID.</p></div></details>
@@ -104,7 +102,6 @@ Last updated: 3/12/2026, 12:38:24 AM
 <details><summary><code>kiosk</code> </summary><div><p>Enable kiosk mode. Please note this is not Chrome OS kiosk mode.</p></div></details>
 <details><summary><code>kiosk-printing</code> </summary><div><p>Enable automatically pressing the print button in print preview.</p></div></details>
 <details><summary><code>make-default-browser</code> </summary><div><p>Makes Chrome default browser</p></div></details>
-<details><summary><code>monitoring-destination-id</code> </summary><div><p>Allows setting a different destination ID for connection-monitoring GCM messages. Useful when running against a non-prod management server.</p></div></details>
 <details><summary><code>native-messaging-connect-host</code> </summary><div><p>Requests a native messaging connection be established between the native messaging host named by this switch and the extension with ID specified by kNativeMessagingConnectExtension.</p></div></details>
 <details><summary><code>native-messaging-connect-extension</code> </summary><div><p>Requests a native messaging connection be established between the extension with ID specified by this switch and the native messaging host named by the kNativeMessagingConnectHost switch.</p></div></details>
 <details><summary><code>native-messaging-connect-id</code> </summary><div><p>If set when kNativeMessagingConnectHost and kNativeMessagingConnectExtension are specified, is reflected to the native messaging host as a command line parameter.</p></div></details>
@@ -157,7 +154,6 @@ Last updated: 3/12/2026, 12:38:24 AM
 <details><summary><code>browser-test</code> </summary><div><p>Browser test mode for the |kStartStackProfiler| switch. Limits the profile durations to be significantly less than the test timeout. On ChromeOS, forces the stack sampling profiler to run on all processes as well.</p></div></details>
 <details><summary><code>storage-pressure-notification-interval</code> </summary><div><p>Interval, in minutes, used for storage pressure notification throttling. Useful for developers testing applications that might use non-trivial amounts of disk space.</p></div></details>
 <details><summary><code>system-audio-capture-default_checked</code> </summary><div><p>This flag sets the checkboxes for sharing system audio during window or screen capture to on by default. It is primarily intended to be used for tests.</p></div></details>
-<details><summary><code>system-log-upload-frequency</code> </summary><div><p>Frequency in Milliseconds for system log uploads. Should only be used for testing purposes.</p></div></details>
 <details><summary><code>tab-capture-audio-default-unchecked</code> </summary><div><p>This flag sets the checkboxes for sharing audio during tab capture to off by default. It is primarily intended to be used for tests.</p></div></details>
 <details><summary><code>auto-accept-this-tab-capture</code> </summary><div><p>These flags make Chrome auto-accept/reject requests to capture the current tab. It should only be used for tests.</p></div></details>
 <details><summary><code>auto-reject-this-tab-capture</code> </summary><div></div></details>
