@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/13/2026, 12:43:53 AM
+Last updated: 3/14/2026, 12:42:06 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -159,7 +159,6 @@ Last updated: 3/13/2026, 12:43:53 AM
 <details><summary><code>auto-reject-this-tab-capture</code> </summary><div></div></details>
 <details><summary><code>auto-reject-capture</code> </summary><div><p>This flag makes Chrome auto-reject requests capture a tab/window/screen.</p></div></details>
 <details><summary><code>test-memory-log-delay-in-minutes</code> </summary><div><p>Custom delay for memory log. This should be used only for testing purpose.</p></div></details>
-<details><summary><code>test-name</code> </summary><div><p>Passes the name of the current running automated test to Chrome.</p></div></details>
 <details><summary><code>trusted-download-sources</code> </summary><div><p>Identifies a list of download sources as trusted, but only if proper group policy is set.</p></div></details>
 <details><summary><code>unlimited-storage</code> </summary><div><p>Overrides per-origin quota settings to unlimited storage for any apps/origins.  This should be used only for testing purpose.</p></div></details>
 <details><summary><code>unsafely-disable-devtools-self-xss-warnings</code> </summary><div><p>Disables warnings about self-XSS attacks when pasting into the DevTools console.</p></div></details>
@@ -188,7 +187,6 @@ Last updated: 3/13/2026, 12:43:53 AM
 <details><summary><code>market-url-for-testing</code> </summary><div><p>Sets the market URL for Chrome for use in testing.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>request-desktop-sites</code> </summary><div><p>Force enable user agent overrides to request desktop sites in Clank.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>cast-mirroring-target-playout-delay</code> </summary><div><p>If enabled, overrides the target playout delay for a casting mirroring session. The value will be parsed as milliseconds. Lowering this value will result in a lower end to end latency, but could come at the cost of other quality standards such as dropped frames or FPS.</p><p>CONDITION: <code>!BUILDFLAG(IS_ANDROID) || BUILDFLAG(ENABLE_DESKTOP_ANDROID_EXTENSIONS)</code></p></div></details>
-<details><summary><code>crosh-command</code> </summary><div><p>Custom crosh command.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>disable-logging-redirect</code> </summary><div><p>Disables logging redirect for testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>disable-login-screen-apps</code> </summary><div><p>Disables apps on the login screen. By default, they are allowed and can be installed through policy.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>short-merge-session-timeout-for-test";#elseconst char kSavePageAsMHTML[] = "save-page-as-mhtml</code> </summary><div><p>Use a short (1 second) timeout for merge session loader throttle testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p><p class="note">Enables saving webpages as MHTML (Webpage, Single) by default, instead of saving as HTML with a directory of sub-resources. (Webpage, Complete). See http://crbug.com/40179885 for how to remove this switch.</p></div></details>
