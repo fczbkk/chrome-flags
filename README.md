@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/26/2026, 12:49:30 AM
+Last updated: 3/27/2026, 12:49:58 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -51,6 +51,7 @@ Last updated: 3/26/2026, 12:49:30 AM
 <details><summary><code>disable-print-preview</code> </summary><div><p>Disables print preview (For testing, and for users who don't like us. :[ )</p></div></details>
 <details><summary><code>disable-prompt-on-repost</code> </summary><div><p>Normally when the user attempts to navigate to a page that was the result of a post we prompt to make sure they want to. This switch may be used to disable that check. This switch is used during automated testing.</p></div></details>
 <details><summary><code>disable-stack-profiler</code> </summary><div><p>Disable stack profiling. Stack profiling may change performance. Disabling stack profiling is beneficial when comparing performance metrics with a build that has it disabled by default.</p></div></details>
+<details><summary><code>disable-updater-scheduler</code> </summary><div><p>Disable startup of the updater process.</p></div></details>
 <details><summary><code>disable-zero-browsers-open-for-tests</code> </summary><div><p>Some tests seem to require the application to close when the last browser window is closed. Thus, we need a switch to force this behavior for ChromeOS Aura, disable "zero window mode". TODO(pkotwicz): Investigate if this bug can be removed. (http://crbug.com/40756809)</p></div></details>
 <details><summary><code>disk-cache-dir</code> </summary><div><p>Use a specific disk cache location, rather than one derived from the UserDatadir.</p></div></details>
 <details><summary><code>disk-cache-size</code> </summary><div><p>Forces the maximum disk space to be used by the disk cache, in bytes.</p></div></details>
@@ -153,6 +154,7 @@ Last updated: 3/26/2026, 12:49:30 AM
 <details><summary><code>test-memory-log-delay-in-minutes</code> </summary><div><p>Custom delay for memory log. This should be used only for testing purpose.</p></div></details>
 <details><summary><code>test-name</code> </summary><div><p>Passes the name of the current running automated test to Chrome.</p></div></details>
 <details><summary><code>trusted-download-sources</code> </summary><div><p>Identifies a list of download sources as trusted, but only if proper group policy is set.</p></div></details>
+<details><summary><code>ttc-bundle-url</code> </summary><div><p>Specifies the TalkToChrome bundle URL.</p></div></details>
 <details><summary><code>unlimited-storage</code> </summary><div><p>Overrides per-origin quota settings to unlimited storage for any apps/origins.  This should be used only for testing purpose.</p></div></details>
 <details><summary><code>unsafely-disable-devtools-self-xss-warnings</code> </summary><div><p>Disables warnings about self-XSS attacks when pasting into the DevTools console.</p></div></details>
 <details><summary><code>user-data-dir</code> </summary><div><p>Specifies the user data directory, which is where the browser will look for all of its state.</p></div></details>
