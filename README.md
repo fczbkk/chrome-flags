@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 3/27/2026, 12:49:58 AM
+Last updated: 3/28/2026, 12:45:42 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -152,7 +152,6 @@ Last updated: 3/27/2026, 12:49:58 AM
 <details><summary><code>auto-reject-this-tab-capture</code> </summary><div></div></details>
 <details><summary><code>auto-reject-capture</code> </summary><div><p>This flag makes Chrome auto-reject requests capture a tab/window/screen.</p></div></details>
 <details><summary><code>test-memory-log-delay-in-minutes</code> </summary><div><p>Custom delay for memory log. This should be used only for testing purpose.</p></div></details>
-<details><summary><code>test-name</code> </summary><div><p>Passes the name of the current running automated test to Chrome.</p></div></details>
 <details><summary><code>trusted-download-sources</code> </summary><div><p>Identifies a list of download sources as trusted, but only if proper group policy is set.</p></div></details>
 <details><summary><code>ttc-bundle-url</code> </summary><div><p>Specifies the TalkToChrome bundle URL.</p></div></details>
 <details><summary><code>unlimited-storage</code> </summary><div><p>Overrides per-origin quota settings to unlimited storage for any apps/origins.  This should be used only for testing purpose.</p></div></details>
