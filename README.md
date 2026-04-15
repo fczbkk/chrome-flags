@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 4/14/2026, 12:55:23 AM
+Last updated: 4/15/2026, 12:55:57 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -229,3 +229,4 @@ Last updated: 4/14/2026, 12:55:23 AM
 <details><summary><code>webapk-server-url</code> </summary><div><p>Custom WebAPK server URL for the sake of testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>use-system-default-printer</code> </summary><div><p>Uses the system default printer as the initially selected destination in print preview, instead of the most recently used destination.</p><p>CONDITION: <code>!BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>user-data-migrated</code> </summary><div><p>Indicates that this process is the product of a relaunch following migration of User Data.</p><p>CONDITION: <code>BUILDFLAG(ENABLE_DOWNGRADE_PROCESSING)</code></p></div></details>
+<details><summary><code>enterprise-signin-dialog-behavior-for-testing</code> </summary><div><p>Overrides the behavior of the sign-in dialog when creating a new profile for an enterprise account. Valid values are "accept-new-profile", "accept-current-profile", and "cancel".</p><p>CONDITION: <code>BUILDFLAG(CHROME_FOR_TESTING)</code></p></div></details>
