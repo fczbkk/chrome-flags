@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 4/23/2026, 12:56:59 AM
+Last updated: 4/24/2026, 12:58:00 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -67,7 +67,6 @@ Last updated: 4/23/2026, 12:56:59 AM
 <details><summary><code>devtools-greendev-ui</code> </summary><div><p>Enables the experimental GreenDev UI in DevTools.</p></div></details>
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
-<details><summary><code>enable-unsafe-extension-debugging</code> </summary><div><p>Enables installing/uninstalling extensions at runtime via Chrome DevTools Protocol if the protocol client is connected over --remote-debugging-pipe.</p></div></details>
 <details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
 <details><summary><code>enable-net-benchmarking</code> </summary><div><p>Enables the network-related benchmarking extensions.</p></div></details>
 <details><summary><code>enable-potentially-annoying-security-features</code> </summary><div><p>Enables a number of potentially annoying security features (strict mixed content mode, powerful feature restrictions, etc.)</p></div></details>
