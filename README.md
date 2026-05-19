@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 5/18/2026, 1:09:22 AM
+Last updated: 5/19/2026, 1:09:01 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -85,6 +85,7 @@ Last updated: 5/18/2026, 1:09:22 AM
 <details><summary><code>force-whats-new</code> </summary><div><p>Displays the What's New experience when the browser is started if it has not yet been shown for the current milestone (this overrides kNoFirstRun, without showing the First Run experience).</p></div></details>
 <details><summary><code>hide-crash-restore-bubble</code> </summary><div><p>Does not show the crash restore bubble when the browser is started during the system startup phase in ChromeOS, if the ChromeOS full restore feature is enabled, because the ChromeOS full restore notification is shown for the user to select restore or not.</p></div></details>
 <details><summary><code>homepage</code> </summary><div><p>Specifies which page will be displayed in newly-opened tabs. We need this for testing purposes so that the UI tests don't depend on what comes up for http://google.com.</p></div></details>
+<details><summary><code>simulate-lock-screen-smart-restart</code> </summary><div><p>Causes the browser to simulate a screen lock event shortly after startup. Optional value specifies the delay in seconds (defaults to 5). Used for manual testing of Smart Restart.</p><p>CONDITION: <code>!BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>import-passwords</code> </summary><div><p>Triggers the import of passwords on startup.</p><p>CONDITION: <code>!BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>incognito</code> </summary><div><p>Causes the initial browser opened to be in incognito mode. Further browsers may or may not be in incognito mode; see `IncognitoModePrefs`.</p></div></details>
 <details><summary><code>init-isolate-as-foreground</code> </summary><div><p>Specifies that the main-thread Isolate should initialize in foreground mode. If not specified, the the Isolate will start in background mode for extension processes and foreground mode otherwise.</p></div></details>
