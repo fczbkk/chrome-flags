@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/11/2026, 1:15:47 AM
+Last updated: 6/12/2026, 1:19:09 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -38,6 +38,7 @@ Last updated: 6/11/2026, 1:15:47 AM
 <details><summary><code>custom-devtools-frontend</code> </summary><div><p>Specifies the http:// endpoint which will be used to serve devtools://devtools/custom/<path> Or a file:// URL to specify a custom file path to load from for devtools://devtools/bundled/<path></p></div></details>
 <details><summary><code>debug-packed-apps</code> </summary><div><p>Adds debugging entries such as Inspect Element to context menus of packed apps.</p></div></details>
 <details><summary><code>devtools-flags</code> </summary><div><p>Passes command line parameters to the DevTools front-end.</p></div></details>
+<details><summary><code>devtools-navigation-gating-rules</code> </summary><div><p>Specifies a stringified JSON dictionary defining allowlist and blocklist pattern rules for DevTools-controlled navigations. If an allowlist is provided (even if empty), all top-level navigations to non-matching URLs are blocked. If both allowlist and blocklist match a URL, the more specific pattern determines the outcome. Example: '{ \ "allowlist": ["[*.]foo.com"], \ "blocklist": ["[*.]bar.com"] \ }'</p></div></details>
 <details><summary><code>diagnostics</code> </summary><div><p>Triggers a plethora of diagnostic modes.</p></div></details>
 <details><summary><code>diagnostics-format</code> </summary><div><p>Sets the output format for diagnostic modes enabled by diagnostics flag.</p></div></details>
 <details><summary><code>diagnostics-recovery</code> </summary><div><p>Tells the diagnostics mode to do the requested recovery step(s).</p></div></details>
