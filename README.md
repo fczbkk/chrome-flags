@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/16/2026, 1:23:45 AM
+Last updated: 6/17/2026, 1:19:25 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -220,7 +220,6 @@ Last updated: 6/16/2026, 1:23:45 AM
 <details><summary><code>glic-guest-url";const char kGlicGeminiEnterpriseSettingsOverride[] =    "glic-gemini-enterprise-settings-override</code> </summary><div><p>Overrides the glic guest URL.</p><p class="note">Overrides the Gemini Enterprise settings JSON dictionary for local development.</p></div></details>
 <details><summary><code>glic-always-open-fre</code> </summary><div></div></details>
 <details><summary><code>glic-always-skip-fre</code> </summary><div></div></details>
-<details><summary><code>glic-fre-url</code> </summary><div></div></details>
 <details><summary><code>glic-experimental-fre-url</code> </summary><div></div></details>
 <details><summary><code>glic-shortcuts-learn-more-url";const char kGlicOpenOnStartup[] = "glic-open-on-startup";const char kGlicAllowedOrigins[] = "glic-webui-allowed-origins";const char kGlicAutomation[] = "glic-automation";const char kGlicDev[] = "glic-dev";const char kGlicSkipReloadAfterNavigation[] =    "glic-skip-reload-after-navigation";const char kGlicHostLogging[] = "glic-host-logging";const char kGlicAlwaysShowWebActuationToggle[] =    "glic-always-show-web-actuation-toggle</code> </summary><div><p class="note">Use --glic-open-on-startup=attached or --glic-open-on-startup=detached. List of allowed origins in the glic webview, as a space-separated list. Automation is intended to be passed in addition to glic-dev. It further disables functionality to make basic testing easier. Dev mode for glic only exposed via command line flag. If this flag is set, then the page navigating will not trigger a reload. Whether additional logging is enabled in the glic api host. Whether to show web actuation toggle in the Chrome AI settings page.</p></div></details>
 <details><summary><code>glic-admin-redirect-patterns</code> </summary><div><p>List of URL patterns in the glic webview to redirect to an admin blocked panel, as a space-separated list.</p></div></details>
