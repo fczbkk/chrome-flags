@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 6/25/2026, 1:09:37 AM
+Last updated: 6/26/2026, 1:12:40 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -177,7 +177,6 @@ Last updated: 6/25/2026, 1:09:37 AM
 <details><summary><code>android-entra-sso-allow-debug-brokers</code> </summary><div><p>If enabled Entra SSO will accept authentication headers from a specific list of non-production Microsoft Authentication broker apps.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>auth-spnego-account-type</code> </summary><div><p>Android authentication account type for SPNEGO authentication</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>disable-default-browser-promo</code> </summary><div><p>Disable the default browser promo.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
-<details><summary><code>force-device-ownership</code> </summary><div><p>Forces the device to report being owned by an enterprise. This mimics the presence of an app signaling device ownership.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-enable-night-mode</code> </summary><div><p>Forces the night mode to be enabled.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-show-update-menu-badge</code> </summary><div><p>Forces the update menu badge to show.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>force-update-menu-type</code> </summary><div><p>Forces the update menu type to a specific type.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
