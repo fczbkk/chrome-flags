@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/8/2026, 3:30:00 AM
+Last updated: 7/9/2026, 3:57:54 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -183,7 +183,6 @@ Last updated: 7/8/2026, 3:30:00 AM
 <details><summary><code>custom_summary</code> </summary><div><p>Forces a custom summary to be displayed below the update menu item.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>market-url-for-testing</code> </summary><div><p>Sets the market URL for Chrome for use in testing.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>request-desktop-sites</code> </summary><div><p>Force enable user agent overrides to request desktop sites in Clank.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
-<details><summary><code>use-webui-ntp</code> </summary><div><p>Use WebUI New Tab Page instead of native NTP on Android.</p><p>CONDITION: <code>BUILDFLAG(IS_ANDROID)</code></p></div></details>
 <details><summary><code>cast-mirroring-target-playout-delay</code> </summary><div><p>If enabled, overrides the target playout delay for a casting mirroring session. The value will be parsed as milliseconds. Lowering this value will result in a lower end to end latency, but could come at the cost of other quality standards such as dropped frames or FPS.</p><p>CONDITION: <code>!BUILDFLAG(IS_ANDROID) || BUILDFLAG(ENABLE_DESKTOP_ANDROID_EXTENSIONS)</code></p></div></details>
 <details><summary><code>crosh-command</code> </summary><div><p>Custom crosh command.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>disable-logging-redirect</code> </summary><div><p>Disables logging redirect for testing.</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
