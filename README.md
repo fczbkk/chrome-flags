@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/16/2026, 3:20:28 AM
+Last updated: 7/17/2026, 3:23:36 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -66,7 +66,6 @@ Last updated: 7/16/2026, 3:20:28 AM
 <details><summary><code>enable-bookmark-undo</code> </summary><div><p>Enables the multi-level undo system for bookmarks.</p></div></details>
 <details><summary><code>enable-devtools-pwa-handler</code> </summary><div><p>If enabled, DevTools will allow creating pwa_handler, to enable executing CDP methods (i.e. PWA.install) on browsers connected remotely</p><p>CONDITION: <code>BUILDFLAG(IS_CHROMEOS)</code></p></div></details>
 <details><summary><code>enable-domain-reliability</code> </summary><div><p>Enables Domain Reliability Monitoring.</p></div></details>
-<details><summary><code>devtools-greendev-ui</code> </summary><div><p>Enables the experimental GreenDev UI in DevTools.</p></div></details>
 <details><summary><code>enable-extension-activity-logging</code> </summary><div><p>Enables logging for extension activity.</p></div></details>
 <details><summary><code>enable-extension-activity-log-testing</code> </summary><div></div></details>
 <details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
