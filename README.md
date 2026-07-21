@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 7/20/2026, 3:52:19 AM
+Last updated: 7/21/2026, 3:27:01 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -108,6 +108,7 @@ Last updated: 7/20/2026, 3:52:19 AM
 <details><summary><code>no-pings</code> </summary><div><p>Don't send hyperlink auditing pings</p></div></details>
 <details><summary><code>no-proxy-server</code> </summary><div><p>Don't use a proxy server, always make direct connections. Overrides any other proxy server flags that are passed.</p></div></details>
 <details><summary><code>no-startup-window</code> </summary><div><p>Does not automatically open a browser window on startup (used when launching Chrome for the purpose of hosting background apps).</p></div></details>
+<details><summary><code>notebook-home-url</code> </summary><div><p>Overrides the default URL for the Notebook Home WebUI.</p></div></details>
 <details><summary><code>on-the-fly-mhtml-hash-computation</code> </summary><div><p>Calculate the hash of an MHTML file as it is being saved. The browser process will write the serialized MHTML contents to a file and calculate its hash as it is streamed back from the renderer via a Mojo data pipe.</p></div></details>
 <details><summary><code>new-window</code> </summary><div><p>Launches URL in new browser window.</p></div></details>
 <details><summary><code>focus</code> </summary><div><p>Activates an existing tab or app window by URL or app id before creating anything new. Syntax: comma-ordered selectors. Bare URLs are exact. Add a trailing * for prefix. app:<app-id> targets PWAs. Example: --focus=https://meet.google.com/*,app:abc123</p></div></details>
