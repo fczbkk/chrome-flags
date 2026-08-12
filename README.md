@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/11/2026, 12:28:05 AM
+Last updated: 8/12/2026, 12:33:15 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -199,7 +199,6 @@ Last updated: 8/11/2026, 12:28:05 AM
 <details><summary><code>make-chrome-default</code> </summary><div><p>Indicates whether Chrome should be set as the default browser during installation.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>code-sign-clone-cleanup</code> </summary><div><p>A process type (switches::kProcessType) that cleans up the browser's temporary code sign clone.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>unique-temp-dir-suffix</code> </summary><div><p>When switches::kProcessType is switches::kCodeSignCloneCleanupProcess this switch is required. The value must be the unique suffix portion of the temporary directory that contains the clone. The full path will be reconstructed by the cleanup process.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
-<details><summary><code>no-op-for-testing</code> </summary><div><p>A process type that exits cleanly with code 0 without performing work.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
 <details><summary><code>enable-profile-shortcut-manager</code> </summary><div><p>Force-enables the profile shortcut manager. This is needed for tests since they use a custom-user-data-dir which disables this.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>hide-icons</code> </summary><div><p>Makes Windows happy by allowing it to show "Enable access to this program" checkbox in Add/Remove Programs->Set Program Access and Defaults. This only shows an error box because the only way to hide Chrome is by uninstalling it.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
 <details><summary><code>no-network-profile-warning</code> </summary><div><p>Whether or not the browser should warn if the profile is on a network share. This flag is only relevant for Windows currently.</p><p>CONDITION: <code>BUILDFLAG(IS_WIN)</code></p></div></details>
