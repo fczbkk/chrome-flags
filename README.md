@@ -8,7 +8,7 @@ You can find the list directly in [source code](https://chromium.googlesource.co
 
 ## Flags
 
-Last updated: 8/12/2026, 12:33:15 AM
+Last updated: 8/13/2026, 12:33:55 AM
 
 <details><summary><code>accept-lang</code> </summary><div><p>----------------------------------------------------------------------------- Can't find the switch you are looking for? Try looking in: ash/constants/ash_switches.cc base/base_switches.cc etc. When commenting your switch, please use the same voice as surrounding comments. Imagine "This switch..." at the beginning of the phrase, and it'll all work out. ----------------------------------------------------------------------------- Specifies Accept-Language to send to servers and expose to JavaScript via the navigator.language DOM property. language[-country] where language is the 2 letter code from ISO-639.</p></div></details>
 <details><summary><code>allow-appshim-signature-mismatch-for-tests</code> </summary><div><p>Only if we're running in an unsigned build, passing this flag will allow app shims whose code signature does not match what chrome is expecting to still connect to chrome. This is used by some tests to allow the test to pretend to be a valid app shim.</p><p>CONDITION: <code>BUILDFLAG(IS_MAC)</code></p></div></details>
@@ -71,6 +71,7 @@ Last updated: 8/12/2026, 12:33:15 AM
 <details><summary><code>enable-hangout-services-extension-for-testing</code> </summary><div><p>Force enabling HangoutServicesExtension.</p></div></details>
 <details><summary><code>enable-net-benchmarking</code> </summary><div><p>Enables the network-related benchmarking extensions.</p></div></details>
 <details><summary><code>enable-potentially-annoying-security-features</code> </summary><div><p>Enables a number of potentially annoying security features (strict mixed content mode, powerful feature restrictions, etc.)</p></div></details>
+<details><summary><code>enable-ttc-debug-logs</code> </summary><div><p>Enables verbose debug logs for Talk to Chrome (TTC).</p></div></details>
 <details><summary><code>experimental-ai-stable-channel</code> </summary><div><p>Allows experimental ai extension APIs to be used in stable channel. This disables chrome sign-in if set, regardless of channel.</p></div></details>
 <details><summary><code>explicitly-allowed-ports</code> </summary><div><p>Allows overriding the list of restricted ports by passing a comma-separated list of port numbers.</p></div></details>
 <details><summary><code>enable-extension-ai-data-collection</code> </summary><div><p>Name of the command line flag to allow the ai data collection extension API.</p></div></details>
